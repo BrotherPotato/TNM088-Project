@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 568793182}
   - component: {fileID: 568793181}
   - component: {fileID: 568793184}
+  - component: {fileID: 568793185}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -240,7 +241,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -306,7 +307,7 @@ Transform:
   m_GameObject: {fileID: 568793180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.64, y: 0.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.94563, y: 0.94563, z: 0.94563}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -376,6 +377,18 @@ PolygonCollider2D:
       - {x: 0.09375, y: -0.49609375}
       - {x: 0.14453125, y: -0.484375}
       - {x: 0.19921875, y: -0.46875}
+--- !u!114 &568793185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568793180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1baa568f0334345a1c2d4897c6c850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2135411919
 GameObject:
   m_ObjectHideFlags: 0
