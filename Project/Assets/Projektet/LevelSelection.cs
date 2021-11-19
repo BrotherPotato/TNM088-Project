@@ -20,10 +20,23 @@ public class LevelSelection : MonoBehaviour
     */
     private static int _nextLevelIndex = 1;
 
+    public SceneFader sceneFader;
     private void OnMouseUp()
     {
         
-        string nextLevelName = "Level" + _nextLevelIndex;
-        SceneManager.LoadScene("Main");
+        //string nextLevelName = "Level" + _nextLevelIndex;
+        //SceneManager.LoadScene("Main");
+        
     }
+    
+    
+
+    /*
+    //public SceneFader fader;
+    //public voud Select (string levelName)
+    {
+        //fader.FadeTo(levelName);
+        sceneFader.FadeTo(levelToLoad);
+    }
+    */
 }
