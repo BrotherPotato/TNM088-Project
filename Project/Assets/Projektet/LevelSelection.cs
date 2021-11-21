@@ -18,7 +18,7 @@ public class LevelSelection : MonoBehaviour
         
     }
     */
-    private static int _nextLevelIndex = 1;
+    //private static int _nextLevelIndex = 1;
 
     public SceneFader sceneFader;
     private void OnMouseUp()
