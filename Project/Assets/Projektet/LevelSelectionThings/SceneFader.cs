@@ -9,7 +9,7 @@ public class SceneFader : MonoBehaviour
     public Image img;
     public AnimationCurve curve;
 
-    public string scene1 = "Main";
+    //public string scene1 = "Main";
 
     private float fadeLength = 2f;
 
@@ -17,10 +17,13 @@ public class SceneFader : MonoBehaviour
     {
         StartCoroutine(FadeIn());
     }
-
+    // Använd följande för att använda fadeto funktionen, lägg till SceneFader prefab till alla scripts som ska använda funktionerna
+    // public SceneFader sceneFader;
+    // sceneFader.FadeTo(levelToLoad);
+    // sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     public void FadeTo (string scene)
     {
-        StartCoroutine(FadeOut(scene1));
+        StartCoroutine(FadeOut(scene));
     }
     IEnumerator FadeIn ()
     {
