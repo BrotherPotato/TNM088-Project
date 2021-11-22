@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    Rigidbody2D rb; 
+    Rigidbody2D rb;
+    SpriteRenderer sprite;
     public float speed;
     public float jumpheigth;
     bool isGrounded = false; 
@@ -22,6 +23,8 @@ public class playerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
+        sprite = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -36,6 +39,12 @@ public class playerController : MonoBehaviour
     void Move() 
     { 
         float x = Input.GetAxisRaw("Horizontal"); 
+        if(Input.GetKeyDown("a")){
+            sprite.flipX = true;
+        }
+        if(Input.GetKeyDown("d")){
+            sprite.flipX = false;
+        }
         float moveBy = x * speed; 
         rb.velocity = new Vector2(moveBy, rb.velocity.y); 
 
