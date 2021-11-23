@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class collisions : MonoBehaviour
 {
-    public Rigidbody2D playerRb;
+    private Rigidbody2D playerRb;
     // Start is called before the first frame update
     void Start() {
         playerRb = gameObject.GetComponent<Rigidbody2D>();
