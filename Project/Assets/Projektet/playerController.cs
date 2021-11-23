@@ -24,13 +24,12 @@ public class playerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         sprite = GetComponent<SpriteRenderer>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move(); 
+       Move(); 
        Jump();
        BetterJump();
        CheckIfGrounded();
@@ -39,15 +38,14 @@ public class playerController : MonoBehaviour
     void Move() 
     { 
         float x = Input.GetAxisRaw("Horizontal"); 
-        if(Input.GetKeyDown("a")){
+        if(Input.GetKeyDown("a") || Input.GetKeyDown(KeyCode.LeftArrow)){
             sprite.flipX = true;
         }
-        if(Input.GetKeyDown("d")){
+        if(Input.GetKeyDown("d") || Input.GetKeyDown(KeyCode.RightArrow)){
             sprite.flipX = false;
         }
         float moveBy = x * speed; 
         rb.velocity = new Vector2(moveBy, rb.velocity.y); 
-
     }
 
     void Jump() 
