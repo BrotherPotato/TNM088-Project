@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
+    //Anim controller för player
+    public Animator anim;
+
     Rigidbody2D rb;
     SpriteRenderer sprite;
     public float speed;
@@ -24,6 +27,7 @@ public class playerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,8 +37,19 @@ public class playerController : MonoBehaviour
        Jump();
        BetterJump();
        CheckIfGrounded();
-    }
 
+       //När vi lägger till flera karaktärer får vi addera någon sorts state machine där vi ändrar hur playern beteer sig samt vilka animationer som ska användas
+       CheckAnim(); 
+
+
+
+    }
+    void CheckAnim() //Ändra anim states beroende på rb.velocity
+    {
+        //speed skulle kunna vara horizontal status aswell men använder bara positiva number så ehh
+        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        anim.SetFloat("VerticalStatus", rb.velocity.y);
+    }
     void Move() 
     { 
         float x = Input.GetAxisRaw("Horizontal"); 
@@ -46,6 +61,7 @@ public class playerController : MonoBehaviour
         }
         float moveBy = x * speed; 
         rb.velocity = new Vector2(moveBy, rb.velocity.y); 
+
     }
 
     void Jump() 
