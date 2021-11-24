@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer sprite;
+    public Animator animator;
     public float speed;
     public float jumpheigth;
     bool isGrounded = false; 

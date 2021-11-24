@@ -533,6 +533,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1972795134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2818909560276823558, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
+  m_PrefabInstance: {fileID: 2818909559324451442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1972795135
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972795134}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c70b97e10862d2c4291f446e84cf7d69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2007169747
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007169749}
   - component: {fileID: 2007169748}
+  - component: {fileID: 2007169750}
   m_Layer: 0
   m_Name: Legionen_bg
   m_TagString: Untagged
@@ -615,6 +640,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2007169750
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007169747}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c12b0d7f9d93bf7409a1cca5d0162b01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2818909559324451442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -672,11 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2818909560276823563, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.093
+      value: -8.016
       objectReference: {fileID: 0}
     - target: {fileID: 2818909560276823563, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.158
+      value: -3.258
       objectReference: {fileID: 0}
     - target: {fileID: 2818909560276823563, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.z

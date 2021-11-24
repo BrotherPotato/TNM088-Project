@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: bdac0a73f83335c459dc5c2ef653b0d6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3273843312828709296
+    second: bojje_spritesheet_0
+  - first:
+      213: 9128473752272906309
+    second: bojje_spritesheet_1
+  - first:
+      213: -7385665625268534254
+    second: bojje_spritesheet_2
+  - first:
+      213: -6761033178937334959
+    second: bojje_spritesheet_3
+  - first:
+      213: 2460435884731493859
+    second: bojje_spritesheet_4
+  - first:
+      213: 7752413321365762790
+    second: bojje_spritesheet_5
+  - first:
+      213: -6274499097910667046
+    second: bojje_spritesheet_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +96,168 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: bojje_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 19
+        width: 268
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9717fb5270f6d20800000000000000
+      internalID: 3273843312828709296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 14
+        width: 268
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54824b1538adeae70800000000000000
+      internalID: 9128473752272906309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 19
+        width: 268
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2144e08ae38d08990800000000000000
+      internalID: -7385665625268534254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 7
+        width: 269
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1536fce252cfb22a0800000000000000
+      internalID: -6761033178937334959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 14
+        width: 268
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed6b06b669352220800000000000000
+      internalID: 2460435884731493859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 41
+        width: 268
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2330c77da169b60800000000000000
+      internalID: 7752413321365762790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bojje_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 36
+        width: 269
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8968d60508ce8a0800000000000000
+      internalID: -6274499097910667046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
