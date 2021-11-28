@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -2033,6 +2033,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1862179452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3654930297090196897, guid: 6b8c7629ed5c56c40b2c43f56f188efc, type: 3}
+  m_PrefabInstance: {fileID: 1030911680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1862179453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862179452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08988759c20a4c4ab5104c8787592ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BitShader: {fileID: 2100000, guid: c8ba0957849aad648892f02aeeb95f8b, type: 2}
 --- !u!95 &2040462406 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3654930297452347178, guid: 6b8c7629ed5c56c40b2c43f56f188efc, type: 3}
