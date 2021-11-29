@@ -36,6 +36,12 @@ public class playerController : MonoBehaviour
        CheckIfGrounded();
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log(col.gameObject.tag);
+        //well code for restarting level or losing lifes depending on what we wanna do
+    }
+
     void Move() 
     { 
         float x = Input.GetAxisRaw("Horizontal"); 
