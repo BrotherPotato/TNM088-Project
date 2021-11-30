@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Projektet/Scenes/LevelSelection.unity
     guid: 82060d7ec9627c6419a633c6458762bf
+  - enabled: 1
+    path: Assets/Projektet/Scenes/MainMenu.unity
+    guid: 20daf320a5c971845b9406355255241c
   m_configObjects: {}
