@@ -1291,6 +1291,10 @@ PrefabInstance:
       value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 3654930297090196899, guid: 6b8c7629ed5c56c40b2c43f56f188efc, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654930297090196899, guid: 6b8c7629ed5c56c40b2c43f56f188efc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c8ba0957849aad648892f02aeeb95f8b, type: 2}

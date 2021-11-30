@@ -11,7 +11,7 @@ public class bitShaderScript : MonoBehaviour
     private float pixelateAmountTarget = 0f;
 
     float pixelateSpeed = 2f;
-    float delta = 0.0001f;
+    float delta = 0.001f;
 
     private bool pixelateGoalReached = true;
     private bool pixelated = false;
@@ -47,6 +47,10 @@ public class bitShaderScript : MonoBehaviour
         if(Mathf.Abs(pixelateAmount - pixelateAmountTarget) < delta)
         {
             pixelateGoalReached = true;
+            if(pixelateAmount < delta)
+            {
+                pixelateAmount = 0;
+            }
         } 
         if(!pixelateGoalReached)
         {
