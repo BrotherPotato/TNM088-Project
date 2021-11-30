@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarSpawner : MonoBehaviour
+public class boxSpawner : MonoBehaviour
 {
-    public GameObject starPrefab;
+    public GameObject boxPrefab;
 
     [SerializeField]
     public float spawnTimer;
@@ -14,20 +14,21 @@ public class StarSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(fallingStars());
+        StartCoroutine(spawningBoxes());
     }
-    private void spawnStar(){
+    private void spawnBox(){
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        GameObject s = Instantiate(starPrefab) as GameObject;
-        s.transform.position = new Vector2((Camera.main.transform.position.x + Random.Range(2 * -screenBounds.x, 2 * screenBounds.x)), screenBounds.y);
+        GameObject s = Instantiate(boxPrefab) as GameObject;
+        s.transform.position = new Vector2(transform.position.x, (transform.position.y + 1f));
     }
 
-IEnumerator fallingStars(){
+
+
+IEnumerator spawningBoxes(){
     while(true)
     {
     yield return new WaitForSeconds(spawnTimer);
-    spawnStar();
+    spawnBox();
     }
 }
-
 }

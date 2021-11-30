@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/Main.unity
     guid: 03c1e5f76c9e402409baf3c4a320ea78
-  - enabled: 1
+  - enabled: 0
     path: Assets/Testing/Test.unity
     guid: 2ca5313c30721cf4ca0a69db295b87b0
   - enabled: 1
     path: Assets/Projektet/Scenes/Legionen.unity
     guid: 1b34d5599ba9dd942809f0b751136235
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/Familjen.unity
     guid: ecaaef2e15cdf2543ae4078872c412be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/Kretsen.unity
     guid: f588983cc18aeea47bd67a4e81159533
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/Skurkeriet.unity
     guid: 94615de1f1986394a80c80fa80f6fb1e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Projektet/Scenes/LevelSelection.unity
     guid: a3cd4df4358ed8c478f42cb34058dd1d
   m_configObjects: {}
