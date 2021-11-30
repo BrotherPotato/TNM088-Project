@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer sprite;
+    public GameObject ananasPrefab;
     public Animator animator;
     public float speed;
     public float jumpheigth;
@@ -34,14 +35,61 @@ public class playerController : MonoBehaviour
        Jump();
        BetterJump();
        CheckIfGrounded();
+
+       if (Input.GetMouseButtonDown(0))
+        shootAnanas();
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log(col.gameObject.tag);
         //well code for restarting level or losing lifes depending on what we wanna do
-    }
 
+        /*if(col.gameObject.tag == "bong"){
+        Vector3 bongDir = (transform.position - col.gameObject.transform.position).normalized * 1f;
+
+        rb.AddForce(bongDir * 1000f);
+        }*/
+        if(col.gameObject.tag == "boom")
+        {
+            Debug.Log(col.gameObject.tag);
+            Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+
+            if (Mathf.Abs(rb.velocity.x) > 1f)
+            {
+                Destroy(this.gameObject);
+
+            }
+        }
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "boom")
+        {
+            
+            Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+
+            if (Mathf.Abs(rb.velocity.x) > 10f)
+            {
+                Debug.Log("Death by box");
+            }
+        }
+    }
+    void shootAnanas()
+    {
+        GameObject s = Instantiate(ananasPrefab) as GameObject;
+        s.transform.position = new Vector2(transform.position.x, transform.position.y);
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 dir = (mousePos - transform.position);
+        dir.z = 0.0f;
+        Vector3 dirNormalized = dir.normalized;
+        Debug.Log("pos: " + dirNormalized + "worldp: " + mousePos);
+
+        Rigidbody2D rb = s.gameObject.GetComponent<Rigidbody2D>();
+        Physics2D.IgnoreCollision(s.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        rb.AddForce(dirNormalized * 1000f);
+    }
     void Move() 
     { 
         float x = Input.GetAxisRaw("Horizontal"); 
