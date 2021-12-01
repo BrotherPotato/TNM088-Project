@@ -11,7 +11,7 @@ public class SceneFader : MonoBehaviour
 
     //public string scene1 = "Main";
 
-    private float fadeLength = 2f;
+    private float fadeLength = 1f;
 
     void Start ()
     {
