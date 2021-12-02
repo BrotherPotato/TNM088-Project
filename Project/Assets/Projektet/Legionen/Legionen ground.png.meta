@@ -25,7 +25,7 @@ TextureImporter:
     second: Legionen ground_6
   - first:
       213: 8835731718119429498
-    second: Legionen ground_7
+    second: Legionen ground_1
   - first:
       213: 2554671662565415544
     second: Legionen ground_8
@@ -137,11 +137,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 500
-        width: 500.2857
-        height: 500
+        y: 0
+        width: 2000
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,138 +157,12 @@ TextureImporter:
       name: Legionen ground_1
       rect:
         serializedVersion: 2
-        x: 500
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf203441310e27700800000000000000
-      internalID: 536737678159446779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_2
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ba2ee8a758103760800000000000000
-      internalID: 7435469749564091065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_3
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1477b3ee5d9081040800000000000000
-      internalID: 4618452232298002241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_4
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7913f2f2c8fe6ba0800000000000000
-      internalID: -6093659729602340485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_5
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 684d892988f3ec120800000000000000
-      internalID: 2435954304261608582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_6
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 500
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4da6dfd2627d175b0800000000000000
-      internalID: -5372276321495979308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_7
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 2014
         y: 0
-        width: 500.2857
-        height: 500
+        width: 1488
+        height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,132 +170,6 @@ TextureImporter:
       bones: []
       spriteID: a7519251f23de9a70800000000000000
       internalID: 8835731718119429498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_8
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87ad7f48754047320800000000000000
-      internalID: 2554671662565415544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_9
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bffc994f28c82a40800000000000000
-      internalID: 5343741063299137458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_10
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e7c6350e739c0010800000000000000
-      internalID: 1156461373790013410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_11
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d59513b28c5d1bd40800000000000000
-      internalID: 5598490867493067101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_12
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85ebde98270f977f0800000000000000
-      internalID: -614195499428364712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legionen ground_13
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 0
-        width: 500.2857
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7de5801a282f5b240800000000000000
-      internalID: 4807014820149223127
       vertices: []
       indices: 
       edges: []
