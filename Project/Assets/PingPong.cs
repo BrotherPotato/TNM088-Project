@@ -10,7 +10,7 @@ public class PingPong : MonoBehaviour
     [SerializeField]
     private Vector3[] pos;
 
-    private int index;
+    private int index = 0;
 
     void Update()
     {
