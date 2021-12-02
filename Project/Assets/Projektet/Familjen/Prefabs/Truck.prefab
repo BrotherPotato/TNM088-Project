@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7134977465265807460}
   - component: {fileID: 5749141504525425433}
   - component: {fileID: 111364246431455999}
+  - component: {fileID: 8490435427579487009}
   m_Layer: 0
   m_Name: Truck
   m_TagString: truck
@@ -140,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79ae8d79c1f3f74c98e69ae295e3962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 32
+  speed: 25
   pos:
   - {x: 13.13, y: -0.49, z: 0}
   - {x: 33.17, y: -0.49, z: 0}
@@ -165,3 +166,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8490435427579487009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383940416676956203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ParticlePrefab: {fileID: 8382968995181860494, guid: 23d35f389980d74429c4b5349d75bf8a, type: 3}

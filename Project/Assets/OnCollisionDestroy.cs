@@ -7,6 +7,8 @@ public class OnCollisionDestroy : MonoBehaviour
 {
     [SerializeField] private GameObject _BrownParticlePrefab;
 
+    [SerializeField] private GameObject _TruckParticlePrefab;
+
     // Start is called before the first frame update
 
     void Start()
@@ -32,7 +34,13 @@ public class OnCollisionDestroy : MonoBehaviour
                 GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
                 
                 Destroy(this.gameObject);
-            } 
+            }
+        } else if(s.gameObject.tag == "truck")
+        {
+            GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
+
+            Destroy(s.gameObject);
+            Destroy(this.gameObject);
         } else 
         {
             Destroy(s);
@@ -42,15 +50,22 @@ public class OnCollisionDestroy : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-       GameObject s = col.gameObject;
+        GameObject s = col.gameObject;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if(this.gameObject.tag == "boom")
         {
             if((Mathf.Abs(rb.velocity.x) > 10f || Mathf.Abs(rb.velocity.y) > 10f) && s.gameObject.tag != "boomIg")
             {
-                Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
+                GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
             } 
+            
+        } else if(s.gameObject.tag == "truck")
+        {
+            GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
+
+            Destroy(s.gameObject);
+            Destroy(this.gameObject);
         } else 
         {
             Destroy(s);

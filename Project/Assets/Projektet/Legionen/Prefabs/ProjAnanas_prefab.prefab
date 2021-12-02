@@ -144,3 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _BrownParticlePrefab: {fileID: 6855743036765735476, guid: 8501c69b046673b4ea80501cf2c0c0dc, type: 3}
+  _TruckParticlePrefab: {fileID: 8382968995181860494, guid: 23d35f389980d74429c4b5349d75bf8a, type: 3}
