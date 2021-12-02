@@ -33,6 +33,7 @@ public class playerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         sprite = GetComponent<SpriteRenderer>();
+        DeatchCanvas.SetActive(false);
     }
 
     // Update is called once per frame
