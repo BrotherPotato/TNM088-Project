@@ -22,6 +22,7 @@ public class playerController : MonoBehaviour
     int additionalJumps;
 
     public int ananasCoin;
+    public float moveBy;
 
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
@@ -130,7 +131,7 @@ public class playerController : MonoBehaviour
         if(Input.GetKeyDown("d") || Input.GetKeyDown(KeyCode.RightArrow)){
             sprite.flipX = false;
         }
-        float moveBy = x * speed; 
+        moveBy = x * speed; 
         animator.SetFloat("Speed", Mathf.Abs(moveBy)); 
         rb.velocity = new Vector2(moveBy, rb.velocity.y); 
     }
