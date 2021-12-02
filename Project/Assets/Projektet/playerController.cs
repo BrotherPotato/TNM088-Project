@@ -24,6 +24,7 @@ public class playerController : MonoBehaviour
     public int ananasCoin;
 
     [SerializeField] private GameObject _RedParticlePrefab;
+    [SerializeField] private GameObject DeatchCanvas;
 
     
 
@@ -77,6 +78,8 @@ public class playerController : MonoBehaviour
 
                 Debug.Log("Death by box");
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
+                DeatchCanvas.SetActive(true);
+                Destroy(this.gameObject);
                 // döda kajj
             
         }
@@ -97,6 +100,8 @@ public class playerController : MonoBehaviour
             {
                 Debug.Log("Death by box");
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
+                DeatchCanvas.SetActive(true);
+                Destroy(this.gameObject);
                 // döda kajj
             }
         }

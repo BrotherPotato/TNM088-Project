@@ -54,5 +54,4 @@ public class SceneFader : MonoBehaviour
         SceneManager.LoadScene(scene);
         //SceneManager.LoadScene(scene);
     }
-
 }
