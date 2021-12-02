@@ -23,7 +23,7 @@ public class ananas : MonoBehaviour
         ananasPos = transform.position;
         pos[0] = new Vector3(transform.position.x, transform.position.y + 1f, 0f);
         pos[1] = new Vector3(transform.position.x, transform.position.y - 1f, 0f);
-        print(pos[0]);
+        //print(pos[0]);
     }
 
     // Update is called once per frame
