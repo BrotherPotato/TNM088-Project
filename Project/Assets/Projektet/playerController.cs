@@ -21,6 +21,8 @@ public class playerController : MonoBehaviour
     public int defaultAdditionalJumps = 1; 
     int additionalJumps;
 
+    public int ananasCoin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +38,10 @@ public class playerController : MonoBehaviour
        BetterJump();
        CheckIfGrounded();
 
-       if (Input.GetMouseButtonDown(0))
+       if (Input.GetMouseButtonDown(0) && ananasCoin > 0){
         shootAnanas();
+        ananasCoin--;
+       }
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -60,6 +64,10 @@ public class playerController : MonoBehaviour
                 Destroy(this.gameObject);
 
             }
+        }
+        if(col.gameObject.tag == "Coin"){
+            ananasCoin++;
+            Destroy(col.gameObject);
         }
     }
     void OnCollisionEnter2D(Collision2D col)

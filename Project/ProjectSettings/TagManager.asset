@@ -9,6 +9,7 @@ TagManager:
   - bong
   - boom
   - truck
+  - Coin
   layers:
   - Default
   - TransparentFX
