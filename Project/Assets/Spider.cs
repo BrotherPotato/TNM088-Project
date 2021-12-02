@@ -31,6 +31,7 @@ public class Spider : MonoBehaviour
 
     void Update()
     {
+        if(!shooting)
         transform.position = Vector2.MoveTowards(transform.position, pos[index], Time.deltaTime * speed);
 
         //transform.Rotate(Vector3.forward * -180 * Time.deltaTime);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2465882751261438093}
   - component: {fileID: 1201737926289171738}
   - component: {fileID: 5227857308539449790}
+  - component: {fileID: 9137526901760872096}
   m_Layer: 0
   m_Name: AnanasCoin
   m_TagString: Coin
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 35d0427a6d7499c4e9a0732aa9eb8dc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,3 +110,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.86, y: 3.77}
   m_EdgeRadius: 0
+--- !u!114 &9137526901760872096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6412504298550612440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9225fba0634f54444817f7e20832f7ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ananasTransform: {fileID: 0}
+  ananasPos: {x: 0, y: 0, z: 0}
+  speed: 1
+  pos: []

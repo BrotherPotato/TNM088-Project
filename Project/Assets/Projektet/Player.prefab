@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2818909558933105581
+--- !u!1 &3937346573903808341
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,71 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2818909558933105554}
-  m_Layer: 0
-  m_Name: GroundChecker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2818909558933105554
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909558933105581}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8, y: -0.5, z: 0}
-  m_LocalScale: {x: 23.339336, y: 23.533157, z: 17.228577}
-  m_Children: []
-  m_Father: {fileID: 2818909560276823563}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2818909560276823558
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2818909560276823563}
-  - component: {fileID: 2818909560276823562}
-  - component: {fileID: 2818909560276823556}
-  - component: {fileID: 2818909560276823557}
-  - component: {fileID: 2818909560276823559}
+  - component: {fileID: 8383645212330574171}
+  - component: {fileID: 7315370437035258874}
+  - component: {fileID: 9173638739847263879}
+  - component: {fileID: 4342941435853271272}
+  - component: {fileID: 6444428245846675324}
+  - component: {fileID: 7146693033037223759}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2818909560276823563
+--- !u!4 &8383645212330574171
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909560276823558}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.113, y: -3.158, z: 0}
-  m_LocalScale: {x: 0.05949418, y: 0.058043104, z: 0.058043104}
+  m_GameObject: {fileID: 3937346573903808341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.55, y: -2.52, z: 0}
+  m_LocalScale: {x: 0.05949418, y: 0.058043104, z: 0}
   m_Children:
-  - {fileID: 2818909558933105554}
+  - {fileID: 6794563365364194504}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2818909560276823562
+--- !u!50 &7315370437035258874
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909560276823558}
+  m_GameObject: {fileID: 3937346573903808341}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -85,14 +56,14 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!212 &2818909560276823556
+  m_Constraints: 4
+--- !u!212 &9173638739847263879
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909560276823558}
+  m_GameObject: {fileID: 3937346573903808341}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -125,7 +96,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 77fa6d8452cf6e34a97ce2c4ca459747, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,13 +108,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &2818909560276823557
+--- !u!58 &4342941435853271272
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909560276823558}
+  m_GameObject: {fileID: 3937346573903808341}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -153,26 +124,78 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 10.918704
---- !u!114 &2818909560276823559
+--- !u!114 &6444428245846675324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2818909560276823558}
+  m_GameObject: {fileID: 3937346573903808341}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01010d97c967cd94db7ed0bde3de8acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ananasPrefab: {fileID: 522711404954977707, guid: 72e7bcac2839f9d499c6840cf4f2119c, type: 3}
+  animator: {fileID: 7146693033037223759}
   speed: 8
   jumpheigth: 8
-  isGroundedChecker: {fileID: 2818909558933105554}
+  isGroundedChecker: {fileID: 6794563365364194504}
   checkGroundRadius: 1.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  fallMultiplier: 9.82
+  fallMultiplier: 3
   lowJumpMultiplier: 2
   rememberGroundedFor: 0.1
   defaultAdditionalJumps: 1
+  ananasCoin: 0
+--- !u!95 &7146693033037223759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937346573903808341}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c70b97e10862d2c4291f446e84cf7d69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &4653480638531012669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6794563365364194504}
+  m_Layer: 0
+  m_Name: GroundChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6794563365364194504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653480638531012669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.33, y: -4.02, z: 0}
+  m_LocalScale: {x: 23.339336, y: 23.533157, z: 17.228577}
+  m_Children: []
+  m_Father: {fileID: 8383645212330574171}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
