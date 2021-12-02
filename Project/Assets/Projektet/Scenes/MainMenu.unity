@@ -182,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8da4d2e05b0141348bdec3bdfc7ede21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 576e6f412212d4e41a359201662a5d00, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -535,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3356873623975155778, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 370
       objectReference: {fileID: 0}
     - target: {fileID: 3356873623975155778, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -921,6 +921,7 @@ GameObject:
   - component: {fileID: 1214631035}
   - component: {fileID: 1214631037}
   - component: {fileID: 1214631036}
+  - component: {fileID: 1214631038}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -945,7 +946,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 312.19}
-  m_SizeDelta: {x: 486.75, y: 400}
+  m_SizeDelta: {x: 1383.36, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214631036
 MonoBehaviour:
@@ -960,7 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -968,7 +969,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5a4dee8e0b9bf29479a1f443e5a1a27b, type: 3}
     m_FontSize: 175
     m_FontStyle: 1
     m_BestFit: 0
@@ -980,7 +981,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kajjs
+  m_Text: "Kajj's Rev\xEBnge"
 --- !u!222 &1214631037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -989,6 +990,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214631034}
   m_CullTransparentMesh: 1
+--- !u!114 &1214631038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214631034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.4271936, g: 0.4138483, b: 0.9433962, a: 0.5}
+  m_EffectDistance: {x: 6, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &1513184602 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8120351176320354381, guid: 7b6ea42e11144664e860a7e598d1e9f0, type: 3}
@@ -1078,7 +1094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3356873623975155778, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 370
       objectReference: {fileID: 0}
     - target: {fileID: 3356873623975155778, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_SizeDelta.y
