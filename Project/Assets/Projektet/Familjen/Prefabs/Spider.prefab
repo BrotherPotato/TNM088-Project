@@ -123,7 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  timer: 2
+  timer: 1
+  timeBetween: 0
   spiderWebPrefab: {fileID: 6846076307911914141, guid: 420ca5057c90e2d448a068ebffe1a713, type: 3}
   player: {fileID: 0}
   playerTransform: {fileID: 0}
