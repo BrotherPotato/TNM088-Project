@@ -10,6 +10,7 @@ TagManager:
   - boom
   - truck
   - Coin
+  - boomIg
   layers:
   - Default
   - TransparentFX

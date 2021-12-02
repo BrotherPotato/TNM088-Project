@@ -27,8 +27,8 @@ public class boxSpawner : MonoBehaviour
 IEnumerator spawningBoxes(){
     while(true)
     {
-    yield return new WaitForSeconds(spawnTimer);
-    spawnBox();
+        yield return new WaitForSeconds(spawnTimer);
+        spawnBox();
     }
 }
 }

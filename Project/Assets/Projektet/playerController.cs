@@ -23,6 +23,10 @@ public class playerController : MonoBehaviour
 
     public int ananasCoin;
 
+    [SerializeField] private GameObject _RedParticlePrefab;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +69,18 @@ public class playerController : MonoBehaviour
 
             }
         }
+        if(col.gameObject.tag == "truck")
+        {
+            
+            Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+
+
+                Debug.Log("Death by box");
+                Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
+                // döda kajj
+            
+        }
+
         if(col.gameObject.tag == "Coin"){
             ananasCoin++;
             Destroy(col.gameObject);
@@ -72,7 +88,7 @@ public class playerController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.tag == "boom")
+        if(col.gameObject.tag == "boom" || col.gameObject.tag == "truck")
         {
             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
@@ -80,6 +96,7 @@ public class playerController : MonoBehaviour
             if (Mathf.Abs(rb.velocity.x) > 10f)
             {
                 Debug.Log("Death by box");
+                Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 // döda kajj
             }
         }

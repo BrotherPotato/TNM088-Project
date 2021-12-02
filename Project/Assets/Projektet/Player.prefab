@@ -150,6 +150,7 @@ MonoBehaviour:
   rememberGroundedFor: 0.1
   defaultAdditionalJumps: 1
   ananasCoin: 0
+  _RedParticlePrefab: {fileID: 522258908110581913, guid: e0e1438124fae5647bd73b8e58618759, type: 3}
 --- !u!95 &7146693033037223759
 Animator:
   serializedVersion: 3
