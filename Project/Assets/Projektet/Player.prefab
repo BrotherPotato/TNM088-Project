@@ -139,7 +139,7 @@ MonoBehaviour:
   ananasPrefab: {fileID: 522711404954977707, guid: 72e7bcac2839f9d499c6840cf4f2119c, type: 3}
   animator: {fileID: 7146693033037223759}
   speed: 8
-  jumpheigth: 8
+  jumpheigth: 10
   isGroundedChecker: {fileID: 6794563365364194504}
   checkGroundRadius: 1.5
   groundLayer:
