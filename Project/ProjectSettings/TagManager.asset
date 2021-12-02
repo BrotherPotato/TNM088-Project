@@ -11,6 +11,7 @@ TagManager:
   - truck
   - Coin
   - boomIg
+  - KillPlane
   layers:
   - Default
   - TransparentFX
