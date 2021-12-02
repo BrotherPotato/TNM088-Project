@@ -24,6 +24,10 @@ public class playerController : MonoBehaviour
     public int ananasCoin;
     public float moveBy;
 
+    public string deathBy;
+    public Sprite deathSprite;
+    public SpriteRenderer a;
+
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
 
@@ -61,6 +65,9 @@ public class playerController : MonoBehaviour
 
         rb.AddForce(bongDir * 1000f);
         }*/
+        deathBy = col.gameObject.tag;
+        //a = col.gameObject.GetComponent<SpriteRenderer>();
+        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
         if(col.gameObject.tag == "boom")
         {
             Debug.Log(col.gameObject.tag);
@@ -68,6 +75,9 @@ public class playerController : MonoBehaviour
 
             if (Mathf.Abs(rb.velocity.x) > 1f)
             {
+                deathBy = col.gameObject.tag;
+                        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
+
                 Destroy(this.gameObject);
 
             }
@@ -82,6 +92,9 @@ public class playerController : MonoBehaviour
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
                 Destroy(this.gameObject);
+                deathBy = col.gameObject.tag;
+                        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
+
                 // döda kajj
             
         }
@@ -93,9 +106,10 @@ public class playerController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
+        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
         if(col.gameObject.tag == "boom" || col.gameObject.tag == "truck")
         {
-            
+             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
 
             if (Mathf.Abs(rb.velocity.x) > 10f)
@@ -104,6 +118,9 @@ public class playerController : MonoBehaviour
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
                 Destroy(this.gameObject);
+                deathBy = col.gameObject.tag;
+                       
+
                 // döda kajj
             }
         }

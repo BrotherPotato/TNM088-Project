@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 9202722453457234451}
   - component: {fileID: 9202722453457234450}
   - component: {fileID: 9202722453457234449}
+  - component: {fileID: 6750961531812822416}
   m_Layer: 5
   m_Name: DeathCanvas
   m_TagString: Untagged
@@ -233,6 +234,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6750961531812822416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202722453457234448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e212a5a701cc92842ac17ebe32d38f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 21300000, guid: f7fd69eca2aa07f4cb01ddea4aa6e45f, type: 3}
+  truck: {fileID: 21300000, guid: 3668ab3951e98cc4fabaf60a18af1e93, type: 3}
+  spriteR: {fileID: 0}
 --- !u!1 &9202722453524431065
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,9 +411,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 9202722453570587564}
   - {fileID: 9202722453807500824}
   - {fileID: 9202722454176225015}
-  - {fileID: 9202722453570587564}
   - {fileID: 9202722453524431066}
   - {fileID: 9202722453066288106}
   m_Father: {fileID: 9202722453457234924}
@@ -476,7 +492,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9202722453554717681}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -511,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3668ab3951e98cc4fabaf60a18af1e93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 835f300231cc61548bb4b4f2efb3d100, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -551,7 +567,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9202722453554717681}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -788,7 +804,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9202722453554717681}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
