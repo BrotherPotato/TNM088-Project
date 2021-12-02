@@ -25,13 +25,13 @@ public class convBelt : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("yes");
+        //Debug.Log("yes");
         inContact = true;
         rb = col.gameObject.GetComponent<Rigidbody2D>();
         //rb.velocity = new Vector2(-1000f, rb.velocity.y); 
     }
     void OnCollisionExit2D(Collision2D col){
-        Debug.Log("yes");
+        //Debug.Log("yes");
         inContact = false;
         rb = col.gameObject.GetComponent<Rigidbody2D>();
     }

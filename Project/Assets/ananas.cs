@@ -18,10 +18,12 @@ public class ananas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pos = new Vector3[2];
         ananasTransform = GetComponent<Transform>();
         ananasPos = transform.position;
-        pos[0] = new Vector3(transform.position.x + 2f, transform.position.y, 0f);
-        pos[1] = new Vector3(transform.position.x - 2f, transform.position.y, 0f);
+        pos[0] = new Vector3(transform.position.x, transform.position.y + 1f, 0f);
+        pos[1] = new Vector3(transform.position.x, transform.position.y - 1f, 0f);
+        print(pos[0]);
     }
 
     // Update is called once per frame

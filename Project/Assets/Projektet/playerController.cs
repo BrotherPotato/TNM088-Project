@@ -80,6 +80,7 @@ public class playerController : MonoBehaviour
             if (Mathf.Abs(rb.velocity.x) > 10f)
             {
                 Debug.Log("Death by box");
+                // döda kajj
             }
         }
     }
