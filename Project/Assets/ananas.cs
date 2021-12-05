@@ -15,14 +15,16 @@ public class ananas : MonoBehaviour
 
     private int index = 0;
 
+    public float bounce;
+
     // Start is called before the first frame update
     void Start()
     {
         pos = new Vector3[2];
         ananasTransform = GetComponent<Transform>();
         ananasPos = transform.position;
-        pos[0] = new Vector3(transform.position.x, transform.position.y + 1f, 0f);
-        pos[1] = new Vector3(transform.position.x, transform.position.y - 1f, 0f);
+        pos[0] = new Vector3(transform.position.x, transform.position.y + bounce, 0f);
+        pos[1] = new Vector3(transform.position.x, transform.position.y - bounce, 0f);
         //print(pos[0]);
     }
 
