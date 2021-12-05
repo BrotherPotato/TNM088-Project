@@ -31,7 +31,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
 
-    
+    PauseMenu pause;
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +78,9 @@ public class playerController : MonoBehaviour
                 deathBy = col.gameObject.tag;
                         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
 
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                this.GetComponent<Renderer>().enabled = false;
+                pause.DeathPause();
 
             }
         }
@@ -91,10 +93,11 @@ public class playerController : MonoBehaviour
                 Debug.Log("Death by box");
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                this.GetComponent<Renderer>().enabled = false;
                 deathBy = col.gameObject.tag;
                         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
-
+                pause.DeathPause();
                 // döda kajj
             
         }
@@ -117,9 +120,10 @@ public class playerController : MonoBehaviour
                 Debug.Log("Death by box");
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                this.GetComponent<Renderer>().enabled = false;
                 deathBy = col.gameObject.tag;
-                       
+                pause.DeathPause();   
 
                 // döda kajj
             }

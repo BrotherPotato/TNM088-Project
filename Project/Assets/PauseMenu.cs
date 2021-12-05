@@ -33,12 +33,23 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+
+    public void DeathResume()
+    {
+        Time.timeScale = 1f;
+    }
+    public void DeathPause()
+    {
+        Time.timeScale = 0f;
+    }
+
 
     public void LoadMenu()
     {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 832870591466719923}
   - component: {fileID: 1729614557015427815}
   - component: {fileID: 7626325661575778963}
+  - component: {fileID: -1550279034837142481}
   m_Layer: 0
   m_Name: redParticle
   m_TagString: Untagged
@@ -4862,3 +4863,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-1550279034837142481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522258908110581913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73726d54a052fa4083a008ec562efbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5

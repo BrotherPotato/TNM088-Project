@@ -25,51 +25,62 @@ public class OnCollisionDestroy : MonoBehaviour
     {
         GameObject s = col.gameObject;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if(this.gameObject.tag == "boom")
+        if(s.gameObject.tag == "legion"){
+
+        } else
         {
-            if((Mathf.Abs(rb.velocity.x) > 10f || Mathf.Abs(rb.velocity.y) > 10f) && s.gameObject.tag != "boomIg")
+            if(this.gameObject.tag == "boom")
             {
-                
-                //ParticleSystem.Clear();
-                GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
-                
+                if((Mathf.Abs(rb.velocity.x) > 10f || Mathf.Abs(rb.velocity.y) > 10f) && s.gameObject.tag != "boomIg")
+                {
+                    
+                    //ParticleSystem.Clear();
+                    GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
+                    
+                    Destroy(this.gameObject);
+                }
+            } else if(s.gameObject.tag == "truck")
+            {
+                GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
+
+                Destroy(s.gameObject);
+                Destroy(this.gameObject);
+            } else 
+            {
+                Destroy(s);
                 Destroy(this.gameObject);
             }
-        } else if(s.gameObject.tag == "truck")
-        {
-            GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
-
-            Destroy(s.gameObject);
-            Destroy(this.gameObject);
-        } else 
-        {
-            Destroy(s);
-            Destroy(this.gameObject);
         }
+        
         
     }
     void OnCollisionEnter2D(Collision2D col)
     {
         GameObject s = col.gameObject;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if(this.gameObject.tag == "boom")
-        {
-            if((Mathf.Abs(rb.velocity.x) > 10f || Mathf.Abs(rb.velocity.y) > 10f) && s.gameObject.tag != "boomIg")
-            {
-                GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
-                Destroy(this.gameObject);
-            } 
-            
-        } else if(s.gameObject.tag == "truck")
-        {
-            GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
+        if(s.gameObject.tag == "legion"){
 
-            Destroy(s.gameObject);
-            Destroy(this.gameObject);
-        } else 
+        } else
         {
-            Destroy(s);
-            Destroy(this.gameObject);
+            if(this.gameObject.tag == "boom")
+            {
+                if((Mathf.Abs(rb.velocity.x) > 10f || Mathf.Abs(rb.velocity.y) > 10f) && s.gameObject.tag != "boomIg")
+                {
+                    GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
+                    Destroy(this.gameObject);
+                } 
+                
+            } else if(s.gameObject.tag == "truck")
+            {
+                GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
+
+                Destroy(s.gameObject);
+                Destroy(this.gameObject);
+            } else 
+            {
+                Destroy(s);
+                Destroy(this.gameObject);
+            }
         }
     }
 }

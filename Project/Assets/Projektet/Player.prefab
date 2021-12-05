@@ -150,6 +150,10 @@ MonoBehaviour:
   rememberGroundedFor: 0.1
   defaultAdditionalJumps: 1
   ananasCoin: 0
+  moveBy: 0
+  deathBy: 
+  deathSprite: {fileID: 0}
+  a: {fileID: 0}
   _RedParticlePrefab: {fileID: 522258908110581913, guid: e0e1438124fae5647bd73b8e58618759, type: 3}
   DeatchCanvas: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
 --- !u!95 &7146693033037223759

@@ -12,6 +12,7 @@ TagManager:
   - Coin
   - boomIg
   - KillPlane
+  - legion
   layers:
   - Default
   - TransparentFX
