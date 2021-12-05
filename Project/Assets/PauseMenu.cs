@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+
+    public float timeScale = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = timeScale;
         GameIsPaused = false;
     }
     public void Pause()
@@ -43,7 +45,7 @@ public class PauseMenu : MonoBehaviour
 
     public void DeathResume()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = timeScale;
     }
     public void DeathPause()
     {
@@ -53,7 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = timeScale;
         SceneManager.LoadScene("MainMenu");
     }
     public void QuitGame()

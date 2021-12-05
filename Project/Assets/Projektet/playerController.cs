@@ -11,6 +11,8 @@ public class playerController : MonoBehaviour
     public float speed;
     public float jumpheigth;
     bool isGrounded = false; 
+
+    bool isAlive = true;
     public Transform isGroundedChecker; 
     public float checkGroundRadius; 
     public LayerMask groundLayer;
@@ -31,7 +33,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
 
-    PauseMenu pause;
+    PauseMenu pauseMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +70,7 @@ public class playerController : MonoBehaviour
         deathBy = col.gameObject.tag;
         //a = col.gameObject.GetComponent<SpriteRenderer>();
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
-        if(col.gameObject.tag == "boom")
+        if(col.gameObject.tag == "boom" && isAlive)
         {
             Debug.Log(col.gameObject.tag);
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
@@ -79,12 +81,13 @@ public class playerController : MonoBehaviour
                         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
 
                 //Destroy(this.gameObject);
-                this.GetComponent<Renderer>().enabled = false;
-                pause.DeathPause();
+                //pauseMenu.DeathPause();
+                KillKajj();
+                //pauseMenu.DeathPause();
 
             }
         }
-        if(col.gameObject.tag == "truck")
+        if(col.gameObject.tag == "truck" && isAlive)
         {
             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
@@ -94,10 +97,11 @@ public class playerController : MonoBehaviour
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
                 //Destroy(this.gameObject);
-                this.GetComponent<Renderer>().enabled = false;
+                //pauseMenu.DeathPause();
+                KillKajj();
                 deathBy = col.gameObject.tag;
                         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
-                pause.DeathPause();
+                //pauseMenu.DeathPause();
                 // döda kajj
             
         }
@@ -110,7 +114,7 @@ public class playerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
-        if(col.gameObject.tag == "boom" || col.gameObject.tag == "truck")
+        if((col.gameObject.tag == "boom" || col.gameObject.tag == "truck") && isAlive)
         {
              
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
@@ -121,9 +125,11 @@ public class playerController : MonoBehaviour
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
                 //Destroy(this.gameObject);
-                this.GetComponent<Renderer>().enabled = false;
+                //pauseMenu.DeathPause();
+                KillKajj();
                 deathBy = col.gameObject.tag;
-                pause.DeathPause();   
+                        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
+                //pauseMenu.DeathPause();   
 
                 // döda kajj
             }
@@ -198,5 +204,14 @@ public class playerController : MonoBehaviour
             animator.SetBool("IsJumping",  true); 
         } 
 
+    }
+
+    void KillKajj()
+    {
+        this.GetComponent<Renderer>().enabled = false;
+        this.GetComponent<Rigidbody2D>().isKinematic = true;
+        this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        jumpheigth = 0;
+        speed = 0;
     }
 }
