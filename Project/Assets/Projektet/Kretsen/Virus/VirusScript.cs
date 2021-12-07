@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeslaScript : MonoBehaviour
+public class VirusScript : MonoBehaviour
 {
     BoxCollider2D col;
     public Animator animator;
@@ -17,6 +17,10 @@ public class TeslaScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        attack();
+    }
+    void attack()
     {
         counter++;
         if(counter > zap){

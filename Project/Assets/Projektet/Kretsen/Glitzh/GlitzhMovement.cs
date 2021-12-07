@@ -9,7 +9,6 @@ public class GlitzhMovement : MonoBehaviour
     public float speed;
     public int counter = 0;
     public int turn;
-    public int randomTimer = 0;
     public bool direction = true;
 
 
