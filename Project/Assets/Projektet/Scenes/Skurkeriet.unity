@@ -123,6 +123,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &290536555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7466145477251402675, guid: 89cf36b015d377d48923dab9a98f96b3, type: 3}
+  m_PrefabInstance: {fileID: 9076440352888485175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &290536556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290536555}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &382794327
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 790860560812472869, guid: 2fc0f94b084131b4c9b03a113a7899d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.1
+      value: 14.32
       objectReference: {fileID: 0}
     - target: {fileID: 790860560812472869, guid: 2fc0f94b084131b4c9b03a113a7899d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -401,11 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4098539332453612216, guid: 839fa03d63d7c0d4795344aefaa3db43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.94
+      value: 33.35
       objectReference: {fileID: 0}
     - target: {fileID: 4098539332453612216, guid: 839fa03d63d7c0d4795344aefaa3db43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.45
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4098539332453612216, guid: 839fa03d63d7c0d4795344aefaa3db43, type: 3}
       propertyPath: m_LocalPosition.z
@@ -441,6 +467,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 839fa03d63d7c0d4795344aefaa3db43, type: 3}
+--- !u!1 &1293630910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1903032149537832247, guid: 839fa03d63d7c0d4795344aefaa3db43, type: 3}
+  m_PrefabInstance: {fileID: 1286161741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1293630912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293630910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12958527, y: -0.018512726}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.78, y: 14.77}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.1879425, y: 14.140583}
+  m_EdgeRadius: 0
+--- !u!50 &1293630915
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293630910}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1433145442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -815,11 +893,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977904374256831548, guid: 89cf36b015d377d48923dab9a98f96b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.91
+      value: 110.59
       objectReference: {fileID: 0}
     - target: {fileID: 4977904374256831548, guid: 89cf36b015d377d48923dab9a98f96b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.71
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4977904374256831548, guid: 89cf36b015d377d48923dab9a98f96b3, type: 3}
       propertyPath: m_LocalPosition.z

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4098539332453612216}
   - component: {fileID: 974335141037812772}
-  - component: {fileID: 4223300864022792403}
   - component: {fileID: 2507555808145601737}
   m_Layer: 0
   m_Name: Skull
@@ -84,32 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4223300864022792403
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903032149537832247}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.16924858, y: 0.024178505}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13.78, y: 14.77}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 11.590168, y: 13.911301}
-  m_EdgeRadius: 0
 --- !u!114 &2507555808145601737
 MonoBehaviour:
   m_ObjectHideFlags: 0
