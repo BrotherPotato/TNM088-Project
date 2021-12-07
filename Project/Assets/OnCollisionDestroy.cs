@@ -27,9 +27,9 @@ public class OnCollisionDestroy : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if(s.gameObject.tag == "legion"){
 
-        } else if(s.gameObject.tag == "KillPlane" && this.gameObject.tag == "boom")
+        } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
         {
-            Destroy(this.gameObject);
+            Destroy(s.gameObject);
         } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
         {
             Destroy(s.gameObject);
@@ -71,7 +71,7 @@ public class OnCollisionDestroy : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if(s.gameObject.tag == "legion"){
 
-        } else if(s.gameObject.tag == "KillPlane" && this.gameObject.tag == "boom")
+        } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
         {
             Destroy(s.gameObject);
         } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
