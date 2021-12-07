@@ -14,9 +14,19 @@ public class PingPong : MonoBehaviour
 
     public bool rotatePingPong = true;
 
+    SpriteRenderer sprite;
+
+    void Start(){
+        sprite = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, pos[index], Time.deltaTime * speed);
+        if(transform.position.x - pos[index].x < 0)
+        sprite.flipX = true;
+        else
+        sprite.flipX = false;
         if(rotatePingPong)
         {
             transform.Rotate(Vector3.forward * -180 * Time.deltaTime);
