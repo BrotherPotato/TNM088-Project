@@ -18,6 +18,7 @@ public class FollowPlayer : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
 
         GameObject player = GameObject.Find("Player");
+        objectToFollow = player.GetComponent<Transform>();
         //playerController playerController = player.GetComponent<playerController>();
         //posX = GameObject.Find("Player").GetComponent<playerController>().moveBy;
 

@@ -17,6 +17,9 @@ public class Spider : MonoBehaviour
     private float shootingRange;
     RaycastHit hit;
     private bool shooting = false;
+    public bool finishShooting = false;
+    public bool shootWeb = false;
+    public Animator animator;
 
     [SerializeField]
     private Vector3[] pos;
@@ -27,6 +30,7 @@ public class Spider : MonoBehaviour
     {
         player = GameObject.Find("Player"); 
         playerTransform = player.transform;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -57,7 +61,10 @@ public class Spider : MonoBehaviour
             //StartCoroutine(shootingWebs());
             if(timeBetween <= 0f)
             {
-                shootWeb();
+                //shootWebs();
+                shootWeb = true;
+                animator.SetBool("finishedShooting", false);
+
                 timeBetween = 3f; 
             }
 
@@ -68,7 +75,10 @@ public class Spider : MonoBehaviour
             //StopCoroutine(shootingWebs());
         }
         timeBetween -= Time.deltaTime;
+        if(shootWeb)
+        shootWebs();
 
+        animator.SetBool("finishedShooting", finishShooting);
 
     }
     IEnumerator shootingWebs()
@@ -76,12 +86,15 @@ public class Spider : MonoBehaviour
     while(shooting)
     {
     yield return new WaitForSeconds(timer);
-    shootWeb();
+    shootWebs();
     }
     }
 
-    void shootWeb()
+    public void shootWebs()
     {
+        //animator.SetBool("finishedShooting", false);
+        finishShooting = false;
+
         GameObject s = Instantiate(spiderWebPrefab) as GameObject;
         s.transform.position = new Vector2(transform.position.x, transform.position.y);
 
