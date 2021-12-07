@@ -656,6 +656,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.g
+      value: 0.113484085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 3184213154331946229, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Name
       value: LevelButton (2)
@@ -745,6 +765,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_Text
+      value: Kretsen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -813,6 +837,26 @@ PrefabInstance:
     - target: {fileID: 883173771967411886, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0.042714357
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3184213154331946229, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Name
@@ -903,6 +947,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_Text
+      value: Familjen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -916,7 +964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 55
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 6358747728788858067, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Type
@@ -1457,6 +1505,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0.13757896
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 3184213154331946229, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Name
       value: LevelButton
@@ -1547,7 +1615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Text
-      value: Level 1
+      value: Legionen
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Color.b
@@ -1563,7 +1631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 55
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 6358747728788858067, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Type
@@ -1618,6 +1686,26 @@ PrefabInstance:
     - target: {fileID: 883173771967411886, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0.9910693
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833020246192497931, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3184213154331946229, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Name
@@ -1708,6 +1796,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
+      propertyPath: m_Text
+      value: Skurkeriet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -1721,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 55
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6358747728788858067, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Type

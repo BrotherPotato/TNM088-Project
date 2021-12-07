@@ -11,10 +11,12 @@ public class FollowPlayer : MonoBehaviour
     public SpriteRenderer sprite;
     public float posX;
 
+    public float rotSpeed = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
-        this.gameObject.transform.Rotate(0, 0, -90);
+        //this.gameObject.transform.Rotate(0, 0, -90);
         sprite = GetComponent<SpriteRenderer>();
 
         GameObject player = GameObject.Find("Player");
@@ -34,18 +36,35 @@ public class FollowPlayer : MonoBehaviour
        //transform.position = objectToFollow.position + offset;
 
         posX = _playerC.moveBy;
+        
         if(posX != 0)
-        posX = posX/Mathf.Abs(posX);
-
+        {
+            posX = posX/Mathf.Abs(posX);
+        }
+        
+        
         if(posX < 0)
-        sprite.flipY = true;
+        {
+            sprite.flipX = true;
+        }
+        
         
         if(posX > 0)
-        sprite.flipY = false;
+        {
+            sprite.flipX = false;
+        }
+        
 
         //posX = playerController.moveBy;
         offset = new Vector3(posX * 1f, 0, 0);
         transform.position = Vector3.Lerp(transform.position, objectToFollow.position + offset, Time.deltaTime);
 
+
+        Vector2 direction = objectToFollow.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Debug.Log(angle);
+        Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotSpeed * Time.deltaTime);
+        //this.gameObject.transform.Rotate(0, 0, -90);
     }
 }
