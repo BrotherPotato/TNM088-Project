@@ -19688,6 +19688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bur
       objectReference: {fileID: 0}
+    - target: {fileID: 2887790408381263907, guid: 89c7e3194b33664449e21a87885f2376, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89c7e3194b33664449e21a87885f2376, type: 3}
 --- !u!1001 &4681936909423450783
@@ -19827,7 +19831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453524431067, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453524431067, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
