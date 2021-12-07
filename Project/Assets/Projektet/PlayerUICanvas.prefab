@@ -499,16 +499,18 @@ MonoBehaviour:
   opacity: 0.5
   playerScript: {fileID: 0}
   ananasCounter: {fileID: 1915506863302072337}
-  timerTimer: {fileID: 0}
-  pointCounter: {fileID: 0}
+  timerTimer: {fileID: 122577833951603963}
+  pointCounter: {fileID: 1568316471047070950}
   ananasCoin: 0
   time: 0
-  timeTextMinutes: 
-  timeTextSeconds: 
-  pointsText: 
   timeSecounds: 0
   timeMinutes: 0
   points: 0
+  legionar1Saved: 0
+  legionar2Saved: 0
+  legionar3Saved: 0
+  legionar4Saved: 0
+  kajjAlive: 1
 --- !u!1 &1915506862426070591
 GameObject:
   m_ObjectHideFlags: 0

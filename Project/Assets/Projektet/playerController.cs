@@ -33,7 +33,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
 
-    PauseMenu pauseMenu;
+    public PauseMenu pauseMenu;
     public UIScript uiScript;
 
     // Start is called before the first frame update
@@ -208,13 +208,15 @@ public class playerController : MonoBehaviour
 
     }
 
-    void KillKajj()
+    public void KillKajj()
     {
         this.GetComponent<Renderer>().enabled = false;
+        this.GetComponent<CircleCollider2D>().enabled = false;
         this.GetComponent<Rigidbody2D>().isKinematic = true;
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         uiScript.kajjAlive = false;
         jumpheigth = 0;
         speed = 0;
+        pauseMenu.DeathSlowDown();
     }
 }

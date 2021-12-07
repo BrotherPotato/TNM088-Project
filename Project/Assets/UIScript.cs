@@ -30,14 +30,15 @@ public class UIScript : MonoBehaviour
     private string pointsText;
     public int timeSecounds = 0;
     public int timeMinutes = 0;
-    public int points = 0;
-    public bool legionar1Saved = false;
-    public bool legionar2Saved = false;
-    public bool legionar3Saved = false;
-    public bool legionar4Saved = false;
+    public int points = 1000;
+    public static bool legionar1Saved = false;
+    public static bool legionar2Saved = false;
+    public static bool legionar3Saved = false;
+    public static bool legionar4Saved = false;
 
     public bool kajjAlive = true;
 
+    //playerController playerScript;
     //public float opacity;
     // Start is called before the first frame update
     void Start()
@@ -126,7 +127,7 @@ public class UIScript : MonoBehaviour
     
     public void pointCount()
     {
-        points += 5;
+        points -= 5;
         if(points >= 10000)
         {
             pointsText = points.ToString() + "p";
@@ -139,9 +140,12 @@ public class UIScript : MonoBehaviour
         } else if(points >= 10)
         {
             pointsText = "000" + points.ToString() + "p";
-        } else
+        } else if(points >= 0)
         {
             pointsText = "0000" + points.ToString() + "p";
+        } else
+        {
+            playerScript.KillKajj();
         }
         //pointsText = points.ToString() + "p";
         pointCounter.text = pointsText;

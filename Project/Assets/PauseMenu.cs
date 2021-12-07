@@ -47,6 +47,11 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = timeScale;
     }
+
+    public void DeathSlowDown()
+    {
+        Time.timeScale = 0.4f * timeScale;
+    }
     public void DeathPause()
     {
         Time.timeScale = 0f;

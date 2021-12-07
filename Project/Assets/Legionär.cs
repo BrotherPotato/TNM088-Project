@@ -32,37 +32,37 @@ public class Legionär : MonoBehaviour
             switch (legionNr)
             {
             case 1:
-                if(!uiScript.legionar1Saved)
+                if(!UIScript.legionar1Saved)
                 {
                     Debug.Log("1");
-                    uiScript.legionar1Saved = true;
+                    UIScript.legionar1Saved = true;
                     uiScript.touchLegion();
                 }
                 break;
 
             case 2:
-                if(!uiScript.legionar2Saved)
+                if(!UIScript.legionar2Saved)
                 {
                     Debug.Log("2");
-                    uiScript.legionar2Saved = true;
+                    UIScript.legionar2Saved = true;
                     uiScript.touchLegion();
                 }
                 break;
 
             case 3:
-                if(!uiScript.legionar3Saved)
+                if(!UIScript.legionar3Saved)
                 {
                     Debug.Log("3");
-                    uiScript.legionar3Saved = true;
+                    UIScript.legionar3Saved = true;
                     uiScript.touchLegion();
                 }
                 break;
 
             case 4:
-                if(!uiScript.legionar4Saved)
+                if(!UIScript.legionar4Saved)
                 {
                     Debug.Log("4");
-                    uiScript.legionar4Saved = true;
+                    UIScript.legionar4Saved = true;
                     uiScript.touchLegion();
                 }
                 break;
