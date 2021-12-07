@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spider : MonoBehaviour
+public class BellaController : MonoBehaviour
 {
     [SerializeField]
     private float speed;
@@ -67,7 +67,7 @@ public class Spider : MonoBehaviour
         if(Vector2.Distance(transform.position, playerTransform.position) < shootingRange && timeBetween <= 0f)
         {
             shooting = true;
-            timeBetween = 3f; 
+            timeBetween = 20f; 
         }
         animator.SetBool("Attacking", shooting);
         timeBetween -= Time.deltaTime;
@@ -75,7 +75,7 @@ public class Spider : MonoBehaviour
 
     }
 
-    public void shootWebs()
+    public void Attack()
     {
         //animator.SetBool("finishedShooting", false);
         finishShooting = false;

@@ -50,7 +50,7 @@ public class OnCollisionDestroy : MonoBehaviour
                 Destroy(this.gameObject);
             } else 
             {
-                Destroy(s);
+                //Destroy(s);
                 Destroy(this.gameObject);
             }
         }
@@ -84,7 +84,7 @@ public class OnCollisionDestroy : MonoBehaviour
                 Destroy(this.gameObject);
             } else 
             {
-                Destroy(s);
+                //Destroy(s);
                 Destroy(this.gameObject);
             }
         }

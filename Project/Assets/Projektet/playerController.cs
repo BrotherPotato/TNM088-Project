@@ -71,6 +71,8 @@ public class playerController : MonoBehaviour
         deathBy = col.gameObject.tag;
         //a = col.gameObject.GetComponent<SpriteRenderer>();
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
+        if(col.gameObject.tag == "Death")
+        KillKajj();
         if(col.gameObject.tag == "boom" && isAlive)
         {
             Debug.Log(col.gameObject.tag);
