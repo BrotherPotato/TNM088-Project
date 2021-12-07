@@ -127,8 +127,23 @@ public class UIScript : MonoBehaviour
     public void pointCount()
     {
         points += 5;
-
-        pointsText = points.ToString() + "p";
+        if(points >= 10000)
+        {
+            pointsText = points.ToString() + "p";
+        } else if(points >= 1000)
+        {
+            pointsText = "0" + points.ToString() + "p";
+        } else if(points >= 100)
+        {
+            pointsText = "00" + points.ToString() + "p";
+        } else if(points >= 10)
+        {
+            pointsText = "000" + points.ToString() + "p";
+        } else
+        {
+            pointsText = "0000" + points.ToString() + "p";
+        }
+        //pointsText = points.ToString() + "p";
         pointCounter.text = pointsText;
     }
     public void touchAnanas()
