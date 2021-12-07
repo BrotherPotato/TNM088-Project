@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8214662735640285860}
   - component: {fileID: 7232622593252816785}
   - component: {fileID: 856071020341313258}
+  - component: {fileID: 967300724540269719}
   - component: {fileID: 768648074}
   m_Layer: 0
   m_Name: Spider
@@ -137,6 +138,20 @@ MonoBehaviour:
   pos:
   - {x: -8, y: -3.47, z: 0}
   - {x: 8, y: -3.47, z: 0}
+--- !u!114 &967300724540269719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6613669076345853943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BrownParticlePrefab: {fileID: 0}
+  _TruckParticlePrefab: {fileID: 0}
 --- !u!95 &768648074
 Animator:
   serializedVersion: 3
