@@ -8,7 +8,7 @@ public class Spider : MonoBehaviour
     private float speed;
     [SerializeField]
     public float timer;
-    public float timeBetween;
+    public float timeBetween = 0;
 
     public GameObject spiderWebPrefab;
     public GameObject player;
@@ -16,7 +16,7 @@ public class Spider : MonoBehaviour
     [SerializeField]
     private float shootingRange;
     RaycastHit hit;
-    private bool shooting = false;
+    public bool shooting = false;
     public bool finishShooting = false;
     public bool shootWeb = false;
     public Animator animator;
@@ -26,18 +26,27 @@ public class Spider : MonoBehaviour
 
     private int index;
 
+    SpriteRenderer sprite;
+
     void Start()
     {
         player = GameObject.Find("Player"); 
         playerTransform = player.transform;
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
+        animator.SetBool("Attacking", shooting);
+
         if(!shooting)
         transform.position = Vector2.MoveTowards(transform.position, pos[index], Time.deltaTime * speed);
 
+        if(transform.position.x - pos[index].x < 0)
+        sprite.flipX = true;
+        else
+        sprite.flipX = false;
         //transform.Rotate(Vector3.forward * -180 * Time.deltaTime);
 
         if(transform.position == pos[index])
@@ -55,30 +64,14 @@ public class Spider : MonoBehaviour
 
 
  
-        if(Vector2.Distance(transform.position, playerTransform.position) < shootingRange )
+        if(Vector2.Distance(transform.position, playerTransform.position) < shootingRange && timeBetween <= 0f)
         {
             shooting = true;
-            //StartCoroutine(shootingWebs());
-            if(timeBetween <= 0f)
-            {
-                //shootWebs();
-                shootWeb = true;
-                animator.SetBool("finishedShooting", false);
-
-                timeBetween = 3f; 
-            }
-
+            timeBetween = 3f; 
         }
-        else
-        {
-            shooting = false;
-            //StopCoroutine(shootingWebs());
-        }
+        animator.SetBool("Attacking", shooting);
         timeBetween -= Time.deltaTime;
-        if(shootWeb)
-        shootWebs();
 
-        animator.SetBool("finishedShooting", finishShooting);
 
     }
     IEnumerator shootingWebs()
