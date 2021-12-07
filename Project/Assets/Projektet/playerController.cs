@@ -34,6 +34,7 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject DeatchCanvas;
 
     PauseMenu pauseMenu;
+    public UIScript uiScript;
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +110,7 @@ public class playerController : MonoBehaviour
         if(col.gameObject.tag == "Coin"){
             ananasCoin++;
             Destroy(col.gameObject);
+            uiScript.touchAnanas();
         }
     }
     void OnCollisionEnter2D(Collision2D col)
@@ -211,6 +213,7 @@ public class playerController : MonoBehaviour
         this.GetComponent<Renderer>().enabled = false;
         this.GetComponent<Rigidbody2D>().isKinematic = true;
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        uiScript.kajjAlive = false;
         jumpheigth = 0;
         speed = 0;
     }

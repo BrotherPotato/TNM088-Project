@@ -723,6 +723,14 @@ PrefabInstance:
       propertyPath: legionNr
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uIScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
     - target: {fileID: 7329532972039599563, guid: 874134c05666a4945b7efe00df19808c, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1305,6 +1313,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6444428245846675324, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 6444428245846675324, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: DeatchCanvas
       value: 
       objectReference: {fileID: 1431573522}
@@ -1314,11 +1326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8383645212330574171, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17470217
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 8383645212330574171, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0248282
+      value: -1.09
       objectReference: {fileID: 0}
     - target: {fileID: 8383645212330574171, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1504,11 +1516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3392809846629486996, guid: 0a50304b434013e479ebf95983582819, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17470211
+      value: 0.9599995
       objectReference: {fileID: 0}
     - target: {fileID: 3392809846629486996, guid: 0a50304b434013e479ebf95983582819, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2648284
+      value: -1.3300004
       objectReference: {fileID: 0}
     - target: {fileID: 3392809846629486996, guid: 0a50304b434013e479ebf95983582819, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1791,6 +1803,14 @@ PrefabInstance:
       propertyPath: legionNr
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uIScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
     - target: {fileID: 7329532972039599563, guid: 874134c05666a4945b7efe00df19808c, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4396,7 +4416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639811089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17470211, y: -1.2648284, z: -10}
+  m_LocalPosition: {x: 0.9599995, y: -1.3300004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5140,6 +5160,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 176749003023169772, guid: 397e26ee3914ef14bb132b738a9ea504, type: 3}
   m_PrefabInstance: {fileID: 995300783}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1823736706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1568316471047070950, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+  m_PrefabInstance: {fileID: 1915506862621036083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830113451
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,6 +5716,14 @@ PrefabInstance:
       propertyPath: legionNr
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uIScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
     - target: {fileID: 7329532972039599563, guid: 874134c05666a4945b7efe00df19808c, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5889,6 +5928,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1261282453250002091, guid: 9736048ceb4840b4581e61a95a31e1a8, type: 3}
   m_PrefabInstance: {fileID: 1876806119}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2057541086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 122577833951603963, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+  m_PrefabInstance: {fileID: 1915506862621036083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2066366719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6208,6 +6258,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8809318392520380715, guid: 7a6a3961dee68594594cdd81b221f134, type: 3}
   m_PrefabInstance: {fileID: 1065114296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2111531233 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1915506862289168632, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+  m_PrefabInstance: {fileID: 1915506862621036083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e74ce64a3bc4c41a789f501408ee5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2111976632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6388,6 +6449,14 @@ PrefabInstance:
       propertyPath: legionNr
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uIScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 6078557439760073827, guid: 874134c05666a4945b7efe00df19808c, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
     - target: {fileID: 7329532972039599563, guid: 874134c05666a4945b7efe00df19808c, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6499,9 +6568,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1915506862289168632, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+      propertyPath: timerTime
+      value: 
+      objectReference: {fileID: 2057541086}
+    - target: {fileID: 1915506862289168632, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+      propertyPath: timerTimer
+      value: 
+      objectReference: {fileID: 2057541086}
+    - target: {fileID: 1915506862289168632, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1141782391}
+    - target: {fileID: 1915506862289168632, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
+      propertyPath: pointCounter
+      value: 
+      objectReference: {fileID: 1823736706}
     - target: {fileID: 1915506862289168633, guid: 361ae2b655b4d73498bc0e7f9fce3987, type: 3}
       propertyPath: m_Name
       value: PlayerUICanvas

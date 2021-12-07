@@ -18,13 +18,25 @@ public class UIScript : MonoBehaviour
     public playerController playerScript;
 
     public Text ananasCounter;
+    public Text timerTimer;
+    public Text pointCounter;
 
     public int ananasCoin;
 
-    public static bool legionar1Saved = false;
-    public static bool legionar2Saved = false;
-    public static bool legionar3Saved = false;
-    public static bool legionar4Saved = false;
+    //public float timeElapsed = 0f;
+    public string time;
+    private string timeTextMinutes;
+    private string timeTextSeconds;
+    private string pointsText;
+    public int timeSecounds = 0;
+    public int timeMinutes = 0;
+    public int points = 0;
+    public bool legionar1Saved = false;
+    public bool legionar2Saved = false;
+    public bool legionar3Saved = false;
+    public bool legionar4Saved = false;
+
+    public bool kajjAlive = true;
 
     //public float opacity;
     // Start is called before the first frame update
@@ -37,6 +49,8 @@ public class UIScript : MonoBehaviour
         legion2 = GameObject.Find("Leg2");
         legion3 = GameObject.Find("Leg3");
         legion4 = GameObject.Find("Leg4");
+        
+        StartCoroutine(secondCounter());
         
     }
 
@@ -52,9 +66,14 @@ public class UIScript : MonoBehaviour
         uppdateLegionRenderer(legionar2Saved, legion2);
         uppdateLegionRenderer(legionar3Saved, legion3);
         uppdateLegionRenderer(legionar4Saved, legion4);
+
+        //timeElapsed += Time.deltaTime;
+        //int seconds = timeElapsed % 60;
+        //timerTime.text = seconds.ToString();
     }
     
-    void uppdateLegionRenderer (bool legionarSaved, GameObject legionNr)  {
+    void uppdateLegionRenderer (bool legionarSaved, GameObject legionNr)  
+    {
         LegionImg = legionNr.GetComponent<Image>();
 
         var tempColor = LegionImg.color;
@@ -67,5 +86,57 @@ public class UIScript : MonoBehaviour
         }
         LegionImg.color = tempColor;
     }
+
+    IEnumerator secondCounter()
+    {
+        while (kajjAlive)
+        {
+            timeCount();
+            pointCount();
+            yield return new WaitForSeconds(1);
+        }
+    }
+    public void timeCount()
+    {
+        timeSecounds += 1;
+        if(timeSecounds == 60)
+        {
+            timeMinutes += 1;
+            timeSecounds = 1;
+        }
+        if(timeSecounds < 10)
+        {
+            timeTextSeconds = "0" + timeSecounds.ToString();
+        } else
+        {
+            timeTextSeconds = timeSecounds.ToString();
+        }
+        if(timeMinutes < 10)
+        {
+            timeTextMinutes = "0" + timeMinutes.ToString();
+        } else
+        {
+            timeTextMinutes = timeMinutes.ToString();
+        }
+        
+
+        time = timeTextMinutes + ":" + timeTextSeconds;
+        timerTimer.text = time;
+    }
     
+    public void pointCount()
+    {
+        points += 5;
+
+        pointsText = points.ToString() + "p";
+        pointCounter.text = pointsText;
+    }
+    public void touchAnanas()
+    {
+        points += 500;
+    }
+    public void touchLegion()
+    {
+        points += 5000;
+    }
 }

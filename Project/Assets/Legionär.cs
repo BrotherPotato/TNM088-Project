@@ -8,6 +8,8 @@ public class Legionär : MonoBehaviour
 
     public int legionNr;
 
+    public UIScript uiScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,30 +25,46 @@ public class Legionär : MonoBehaviour
         if(col.gameObject.tag == "Player"){
             followplayer = GetComponent<FollowPlayer>();
             followplayer.enabled = true;
-
+            //uIScript.touchLegion();
 
             //UIScript.$"legionNr" = true;
 
             switch (legionNr)
             {
             case 1:
-                Debug.Log("1");
-                UIScript.legionar1Saved = true;
+                if(!uiScript.legionar1Saved)
+                {
+                    Debug.Log("1");
+                    uiScript.legionar1Saved = true;
+                    uiScript.touchLegion();
+                }
                 break;
 
             case 2:
-                Debug.Log("2");
-                UIScript.legionar2Saved = true;
+                if(!uiScript.legionar2Saved)
+                {
+                    Debug.Log("2");
+                    uiScript.legionar2Saved = true;
+                    uiScript.touchLegion();
+                }
                 break;
 
             case 3:
-                Debug.Log("3");
-                UIScript.legionar3Saved = true;
+                if(!uiScript.legionar3Saved)
+                {
+                    Debug.Log("3");
+                    uiScript.legionar3Saved = true;
+                    uiScript.touchLegion();
+                }
                 break;
 
             case 4:
-                Debug.Log("4");
-                UIScript.legionar4Saved = true;
+                if(!uiScript.legionar4Saved)
+                {
+                    Debug.Log("4");
+                    uiScript.legionar4Saved = true;
+                    uiScript.touchLegion();
+                }
                 break;
             
             default:
