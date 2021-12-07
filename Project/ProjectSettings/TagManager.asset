@@ -13,6 +13,7 @@ TagManager:
   - boomIg
   - KillPlane
   - legion
+  - ping
   layers:
   - Default
   - TransparentFX

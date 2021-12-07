@@ -8,7 +8,7 @@ public class OnCollisionDestroy : MonoBehaviour
     [SerializeField] private GameObject _BrownParticlePrefab;
 
     [SerializeField] private GameObject _TruckParticlePrefab;
-
+    playerController playercontroller;
     // Start is called before the first frame update
 
     void Start()
@@ -28,6 +28,9 @@ public class OnCollisionDestroy : MonoBehaviour
         if(s.gameObject.tag == "legion"){
 
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
+        {
+            Destroy(s.gameObject);
+        } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
         {
             Destroy(s.gameObject);
         } else
@@ -64,6 +67,9 @@ public class OnCollisionDestroy : MonoBehaviour
         if(s.gameObject.tag == "legion"){
 
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
+        {
+            Destroy(s.gameObject);
+        } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
         {
             Destroy(s.gameObject);
         } else

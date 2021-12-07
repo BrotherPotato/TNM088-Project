@@ -11,6 +11,9 @@ public class DeathCanvas : MonoBehaviour
 
     public Sprite box;
     public Sprite truck;
+    public Sprite ananas;
+
+    public Sprite voidBlack;
     public Image spriteR;
 
     private string deathBy;
@@ -42,6 +45,22 @@ public class DeathCanvas : MonoBehaviour
             //originalGameObject.transform.GetChild(1).gameObject;
             //child.SetActive(true);
             spriteR.sprite = _playerC.deathSprite;
+        }
+
+        if(deathBy == "ping")
+        {
+            child = GameObject.Find("DeathCanvasAnanas");
+            //originalGameObject.transform.GetChild(1).gameObject;
+            //child.SetActive(true);
+            spriteR.sprite = _playerC.deathSprite;
+        }
+
+        if(deathBy == "KillPlane")
+        {
+            //child = GameObject.Find("DeathCanvasAnanas");
+            //originalGameObject.transform.GetChild(1).gameObject;
+            //child.SetActive(true);
+            //spriteR.sprite = _playerC.deathSprite;
         }
     }
 }
