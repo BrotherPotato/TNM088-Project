@@ -4812,9 +4812,10 @@ GameObject:
   - component: {fileID: 379423195}
   - component: {fileID: 379423197}
   - component: {fileID: 379423198}
+  - component: {fileID: 379423199}
   m_Layer: 0
   m_Name: Virus red
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4973,8 +4974,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BrownParticlePrefab: {fileID: 0}
+  _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+--- !u!50 &379423199
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379423191}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &380550472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6080,9 +6102,10 @@ GameObject:
   - component: {fileID: 425621212}
   - component: {fileID: 425621214}
   - component: {fileID: 425621215}
+  - component: {fileID: 425621216}
   m_Layer: 0
   m_Name: Virus purple
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6241,8 +6264,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BrownParticlePrefab: {fileID: 0}
+  _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+--- !u!50 &425621216
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425621208}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &427067830
 GameObject:
   m_ObjectHideFlags: 0
@@ -6259,7 +6303,7 @@ GameObject:
   - component: {fileID: 427067831}
   m_Layer: 0
   m_Name: Tesla coil 1 (1)
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6292,7 +6336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 427067834}
   counter: 0
-  zap: 200
+  zap: 500
 --- !u!61 &427067833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7630,9 +7674,10 @@ GameObject:
   - component: {fileID: 570964198}
   - component: {fileID: 570964197}
   - component: {fileID: 570964203}
+  - component: {fileID: 570964204}
   m_Layer: 0
   m_Name: Virus red (1)
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7791,8 +7836,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BrownParticlePrefab: {fileID: 0}
+  _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+--- !u!50 &570964204
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570964196}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &581259809
 GameObject:
   m_ObjectHideFlags: 0
@@ -16114,7 +16180,7 @@ GameObject:
   - component: {fileID: 1141238293}
   m_Layer: 0
   m_Name: Tesla coil 1
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16243,7 +16309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1141238290}
   counter: 0
-  zap: 200
+  zap: 500
 --- !u!114 &1141238293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16715,6 +16781,10 @@ PrefabInstance:
     - target: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_Name
       value: DeathCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453457234924, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_Pivot.x
@@ -19436,9 +19506,10 @@ GameObject:
   - component: {fileID: 1384013736}
   - component: {fileID: 1384013735}
   - component: {fileID: 1384013741}
+  - component: {fileID: 1384013742}
   m_Layer: 0
   m_Name: Virus purple (1)
-  m_TagString: Death
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19597,8 +19668,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BrownParticlePrefab: {fileID: 0}
+  _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+--- !u!50 &1384013742
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384013734}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1390212316
 GameObject:
   m_ObjectHideFlags: 0
@@ -24236,7 +24328,7 @@ GameObject:
   - component: {fileID: 1726255730}
   m_Layer: 0
   m_Name: Kretsen Glitzh 1
-  m_TagString: Untagged
+  m_TagString: ping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
