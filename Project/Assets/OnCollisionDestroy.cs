@@ -51,7 +51,12 @@ public class OnCollisionDestroy : MonoBehaviour
 
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
-            } else 
+            } else if(s.gameObject.tag == "Death")
+            {
+                
+                Destroy(s.gameObject);
+                Destroy(this.gameObject);
+            } else
             {
                 //Destroy(s);
                 Destroy(this.gameObject);
@@ -86,6 +91,11 @@ public class OnCollisionDestroy : MonoBehaviour
             {
                 GameObject particles = (GameObject)Instantiate(_TruckParticlePrefab, transform.position, Quaternion.identity);
 
+                Destroy(s.gameObject);
+                Destroy(this.gameObject);
+            } else if(s.gameObject.tag == "Death")
+            {
+                
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
             } else 
