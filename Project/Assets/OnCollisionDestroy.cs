@@ -8,6 +8,8 @@ public class OnCollisionDestroy : MonoBehaviour
     [SerializeField] private GameObject _BrownParticlePrefab;
 
     [SerializeField] private GameObject _TruckParticlePrefab;
+
+    [SerializeField] private GameObject _ananasParticle;
     playerController playercontroller;
     // Start is called before the first frame update
 
@@ -23,8 +25,16 @@ public class OnCollisionDestroy : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+
         GameObject s = col.gameObject;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+        if(this.gameObject.tag == "ananasProj"){
+            GameObject particles = (GameObject)Instantiate(_ananasParticle, transform.position, Quaternion.identity);
+
+        }
+
+
         if(s.gameObject.tag == "legion"){
 
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
@@ -58,7 +68,9 @@ public class OnCollisionDestroy : MonoBehaviour
                 Destroy(this.gameObject);
             } else
             {
-                //Destroy(s);
+                if(s.gameObject.tag != "ground")
+                Destroy(s);
+                
                 Destroy(this.gameObject);
             }
         }
@@ -69,6 +81,11 @@ public class OnCollisionDestroy : MonoBehaviour
     {
         GameObject s = col.gameObject;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if(this.gameObject.tag == "ananasProj"){
+            GameObject particles = (GameObject)Instantiate(_ananasParticle, transform.position, Quaternion.identity);
+
+        }
+
         if(s.gameObject.tag == "legion"){
 
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
@@ -100,7 +117,9 @@ public class OnCollisionDestroy : MonoBehaviour
                 Destroy(this.gameObject);
             } else 
             {
-                //Destroy(s);
+                if(s.gameObject.tag != "ground")
+                Destroy(s);
+
                 Destroy(this.gameObject);
             }
         }

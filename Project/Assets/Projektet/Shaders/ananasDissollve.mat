@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: brownDissolve
-  m_Shader: {fileID: -6465566751694194690, guid: e418a8fadab81ba4db0c5b10ed6c744d, type: 3}
+  m_Name: ananasDissollve
+  m_Shader: {fileID: -6465566751694194690, guid: d5f04f8750545c24e9c834b2812ae41e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,8 +19,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e872f5218a772fd48be22b1789110cd5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 35d0427a6d7499c4e9a0732aa9eb8dc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -36,8 +48,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Fade: 0.674
-    - _Scale: 3.8
+    - _EnableExternalAlpha: 0
+    - _PixelateAmount: 0.5
     m_Colors:
-    - Color_ef85609c6b4142ad8cb0dddaecfd78e0: {r: 0.6320754, g: 0.011663222, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
