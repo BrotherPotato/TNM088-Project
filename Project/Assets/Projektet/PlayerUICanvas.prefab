@@ -505,11 +505,7 @@ MonoBehaviour:
   time: 0
   timeSecounds: 0
   timeMinutes: 0
-  points: 0
-  legionar1Saved: 0
-  legionar2Saved: 0
-  legionar3Saved: 0
-  legionar4Saved: 0
+  points: 1000
   kajjAlive: 1
 --- !u!1 &1915506862426070591
 GameObject:

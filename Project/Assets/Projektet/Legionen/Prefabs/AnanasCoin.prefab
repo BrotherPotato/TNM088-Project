@@ -126,4 +126,4 @@ MonoBehaviour:
   ananasPos: {x: 0, y: 0, z: 0}
   speed: 1
   pos: []
-  bounce: 0.5
+  bounce: 0.2

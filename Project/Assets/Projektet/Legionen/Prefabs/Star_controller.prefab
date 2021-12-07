@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 8696831493139500320, guid: 13066d9b3221e8b45a2603b732d06685, type: 3}
-  spawnTimer: 2
+  spawnTimer: 3

@@ -12,11 +12,16 @@ public class PingPong : MonoBehaviour
 
     private int index = 0;
 
+    public bool rotatePingPong = true;
+
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, pos[index], Time.deltaTime * speed);
-
-        //transform.Rotate(Vector3.forward * -180 * Time.deltaTime);
+        if(rotatePingPong)
+        {
+            transform.Rotate(Vector3.forward * -180 * Time.deltaTime);
+        }
+        
 
         if(transform.position == pos[index])
         {

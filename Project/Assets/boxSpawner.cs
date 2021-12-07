@@ -11,6 +11,8 @@ public class boxSpawner : MonoBehaviour
 
     private Vector2 screenBounds;
 
+    public float spawnYValue = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class boxSpawner : MonoBehaviour
     private void spawnBox(){
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         GameObject s = Instantiate(boxPrefab) as GameObject;
-        s.transform.position = new Vector2(transform.position.x, (transform.position.y + 1f));
+        s.transform.position = new Vector2(transform.position.x, (transform.position.y + spawnYValue));
     }
 
 
