@@ -30,7 +30,7 @@ public class UIScript : MonoBehaviour
     private string pointsText;
     public int timeSecounds = 0;
     public int timeMinutes = 0;
-    public int points = 1000;
+    public static int points = 1000;
     public static bool legionar1Saved = false;
     public static bool legionar2Saved = false;
     public static bool legionar3Saved = false;

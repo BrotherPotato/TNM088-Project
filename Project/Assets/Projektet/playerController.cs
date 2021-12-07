@@ -88,7 +88,7 @@ public class playerController : MonoBehaviour
 
             }
         }
-        if(col.gameObject.tag == "truck" && isAlive)
+        if((col.gameObject.tag == "truck" || col.gameObject.tag == "ping" || col.gameObject.tag == "KillPlane") && isAlive)
         {
             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
@@ -116,7 +116,7 @@ public class playerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
-        if((col.gameObject.tag == "boom" || col.gameObject.tag == "truck") && isAlive)
+        if((col.gameObject.tag == "boom" || col.gameObject.tag == "truck"  || col.gameObject.tag == "ping" ||  col.gameObject.tag == "KillPlane") && isAlive)
         {
              
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();

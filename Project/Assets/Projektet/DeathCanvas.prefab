@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   box: {fileID: 21300000, guid: f7fd69eca2aa07f4cb01ddea4aa6e45f, type: 3}
   truck: {fileID: 21300000, guid: 3668ab3951e98cc4fabaf60a18af1e93, type: 3}
+  ananas: {fileID: 21300000, guid: 35d0427a6d7499c4e9a0732aa9eb8dc1, type: 3}
   spriteR: {fileID: 0}
 --- !u!1 &9202722453524431065
 GameObject:
