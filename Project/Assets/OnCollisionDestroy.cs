@@ -13,9 +13,9 @@ public class OnCollisionDestroy : MonoBehaviour
     playerController playercontroller;
     // Start is called before the first frame update
 
-    void Start()
+    void Awake()
     {
-        
+        LayerMask ground = LayerMask.GetMask("Ground");
     }
 
     // Update is called once per frame
