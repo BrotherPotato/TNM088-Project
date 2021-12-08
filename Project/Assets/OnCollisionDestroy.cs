@@ -13,9 +13,9 @@ public class OnCollisionDestroy : MonoBehaviour
     playerController playercontroller;
     // Start is called before the first frame update
 
-    void Awake()
+    void Start()
     {
-        LayerMask ground = LayerMask.GetMask("Ground");
+        
     }
 
     // Update is called once per frame
@@ -40,9 +40,11 @@ public class OnCollisionDestroy : MonoBehaviour
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
         {
             Destroy(s.gameObject);
+            GetComponent<AudioSource>().Play();
         } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
         {
             Destroy(s.gameObject);
+            GetComponent<AudioSource>().Play();
         } else
         {
             if(this.gameObject.tag == "boom")
@@ -54,6 +56,7 @@ public class OnCollisionDestroy : MonoBehaviour
                     GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
                     
                     Destroy(this.gameObject);
+                    GetComponent<AudioSource>().Play();
                 }
             } else if(s.gameObject.tag == "truck")
             {
@@ -61,11 +64,13 @@ public class OnCollisionDestroy : MonoBehaviour
 
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().Play();
             } else if(s.gameObject.tag == "Death")
             {
                 
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().Play();
             } else
             {
                 if(s.gameObject.tag != "ground")
@@ -91,9 +96,11 @@ public class OnCollisionDestroy : MonoBehaviour
         } else if(this.gameObject.tag == "KillPlane" && s.gameObject.tag == "boom")
         {
             Destroy(s.gameObject);
+            GetComponent<AudioSource>().Play();
         } else if(this.gameObject.tag == "ping" && s.gameObject.tag == "Player")
         {
             Destroy(s.gameObject);
+            GetComponent<AudioSource>().Play();
         } else
         {
             if(this.gameObject.tag == "boom")
@@ -102,6 +109,7 @@ public class OnCollisionDestroy : MonoBehaviour
                 {
                     GameObject particles = (GameObject)Instantiate(_BrownParticlePrefab, transform.position, Quaternion.identity);
                     Destroy(this.gameObject);
+                    GetComponent<AudioSource>().Play();
                 } 
                 
             } else if(s.gameObject.tag == "truck")
@@ -110,17 +118,20 @@ public class OnCollisionDestroy : MonoBehaviour
 
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().Play();
             } else if(s.gameObject.tag == "Death")
             {
                 
                 Destroy(s.gameObject);
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().Play();
             } else 
             {
                 if(s.gameObject.tag != "ground")
                 Destroy(s);
 
                 Destroy(this.gameObject);
+                GetComponent<AudioSource>().Play();
             }
         }
     }

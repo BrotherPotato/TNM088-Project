@@ -182,6 +182,7 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 0)) {
             rb.velocity = new Vector2(rb.velocity.x, jumpheigth);
             additionalJumps--;
+            GetComponent<AudioSource>().Play();
             if(Input.GetKeyDown(KeyCode.Space) && !isGrounded && additionalJumps == 0){
                 rb.gravityScale = 0.5f;
             }
@@ -209,13 +210,14 @@ public class playerController : MonoBehaviour
         if (rb.velocity.y < 0) {
             rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
             animator.SetBool("IsJumping",  true); 
-            
         } 
+        
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
             animator.SetBool("IsJumping",  true); 
         } 
+
 
     }
 
