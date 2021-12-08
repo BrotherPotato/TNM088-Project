@@ -15,7 +15,11 @@ TagManager:
   - legion
   - ping
   - ananasProj
+<<<<<<< Updated upstream
   - Bur
+=======
+  - elevator
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
