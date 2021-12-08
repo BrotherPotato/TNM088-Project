@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4934690674191902982}
   m_Layer: 0
   m_Name: Elevator
-  m_TagString: Untagged
+  m_TagString: elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,4 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiScript: {fileID: 0}
-  open: {fileID: 21300000, guid: fc9cc726116d2824e94785efdc64e9b6, type: 3}
+  spriteRenderer: {fileID: 4934690674191902976}
+  hissSprite: {fileID: 0}
+  openHiss: {fileID: 21300000, guid: fc9cc726116d2824e94785efdc64e9b6, type: 3}
+  elevatorDoorOpen: 0

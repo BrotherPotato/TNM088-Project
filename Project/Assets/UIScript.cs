@@ -120,7 +120,6 @@ public class UIScript : MonoBehaviour
             timeTextMinutes = timeMinutes.ToString();
         }
         
-
         time = timeTextMinutes + ":" + timeTextSeconds;
         timerTimer.text = time;
     }

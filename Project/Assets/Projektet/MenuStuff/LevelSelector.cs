@@ -19,4 +19,9 @@ public class LevelSelector : MonoBehaviour
         Debug.Log("Helo");
         Application.Quit();
     }
+
+    public void SleectNext()
+    {
+        fader.FadeToNext(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

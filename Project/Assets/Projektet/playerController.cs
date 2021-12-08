@@ -33,6 +33,8 @@ public class playerController : MonoBehaviour
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
 
+    [SerializeField] private GameObject LevelCompletedCanvas;
+
     public PauseMenu pauseMenu;
     public UIScript uiScript;
 
@@ -115,6 +117,11 @@ public class playerController : MonoBehaviour
             ananasCoin++;
             Destroy(col.gameObject);
             uiScript.touchAnanas();
+        }
+
+        if(col.gameObject.tag == "elevator")
+        {
+            LevelCompletedCanvas.SetActive(true);
         }
     }
     void OnCollisionEnter2D(Collision2D col)

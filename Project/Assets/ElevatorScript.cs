@@ -35,10 +35,11 @@ public class ElevatorScript : MonoBehaviour
     public void ActivateElevator()
     {
         elevatorDoorOpen = true;
-        //hissObject = GameObject.Find("Elevator");
+        hissObject = GameObject.Find("Elevator");
         //hissSprite = hissObject.GetComponent<Image>();
         //hissSprite.sprite = openHiss;
         spriteRenderer.sprite = openHiss;
         Debug.Log("active elev");
+        hissObject.GetComponent<BoxCollider2D>().isTrigger = true;
     }
 }
