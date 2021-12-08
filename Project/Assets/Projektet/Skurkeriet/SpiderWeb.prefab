@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6657239}
   m_Layer: 0
   m_Name: SpiderWeb
-  m_TagString: Death
+  m_TagString: truck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,5 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _BrownParticlePrefab: {fileID: 0}
+  _BrownParticlePrefab: {fileID: 3937346573903808341, guid: 3e22b9b9f09544047a069ba7752a4000, type: 3}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
