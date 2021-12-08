@@ -766,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Text
-      value: Kretsen
+      value: Kretsn
       objectReference: {fileID: 0}
     - target: {fileID: 3453957620702087306, guid: 7d06e8516ecc11f428f113bae3d9142d, type: 3}
       propertyPath: m_Color.b
