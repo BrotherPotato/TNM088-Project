@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7214574240611735130}
   - component: {fileID: -196172271096466170}
   - component: {fileID: 1688837883608209474}
+  - component: {fileID: 2751246443356649667}
   m_Layer: 0
   m_Name: StarPrefab
   m_TagString: ping
@@ -221,3 +222,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2751246443356649667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696831493139500320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BrownParticlePrefab: {fileID: 0}
+  _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}

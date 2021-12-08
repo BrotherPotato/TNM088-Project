@@ -2050,6 +2050,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &236671862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236671857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BrownParticlePrefab: {fileID: 0}
+  _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!1 &253479406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5109,7 +5124,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1ad8c09317b3a384bba1965e617ff1a1, type: 2}
   m_audioClip: {fileID: 8300000, guid: 232723441f088be468f10c9cd7eb4255, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8363,6 +8378,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1557391595}
     m_Modifications:
+    - target: {fileID: -7090768035040968529, guid: 397e26ee3914ef14bb132b738a9ea504, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 176749003023169768, guid: 397e26ee3914ef14bb132b738a9ea504, type: 3}
       propertyPath: m_Name
       value: Box
@@ -11728,6 +11747,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1537625702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537625697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fd65643c3560a479d60e95d5bb5986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BrownParticlePrefab: {fileID: 0}
+  _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!1001 &1549976311
 PrefabInstance:
   m_ObjectHideFlags: 0
