@@ -3285,6 +3285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!61 &250234083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5040,6 +5041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!50 &379423199
 Rigidbody2D:
   serializedVersion: 4
@@ -6330,6 +6332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!50 &425621216
 Rigidbody2D:
   serializedVersion: 4
@@ -6386,6 +6389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!114 &427067832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7902,6 +7906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!50 &570964204
 Rigidbody2D:
   serializedVersion: 4
@@ -16388,6 +16393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!1 &1145237824
 GameObject:
   m_ObjectHideFlags: 0
@@ -16888,7 +16894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453457234924, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_Pivot.x
@@ -19818,6 +19824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!50 &1384013742
 Rigidbody2D:
   serializedVersion: 4
@@ -24620,6 +24627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BrownParticlePrefab: {fileID: 2075960856}
   _TruckParticlePrefab: {fileID: 0}
+  _ananasParticle: {fileID: 0}
 --- !u!1001 &1726701313
 PrefabInstance:
   m_ObjectHideFlags: 0
