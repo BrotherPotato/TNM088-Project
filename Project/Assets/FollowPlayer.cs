@@ -62,7 +62,7 @@ public class FollowPlayer : MonoBehaviour
 
         Vector2 direction = objectToFollow.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Debug.Log(angle);
+        //Debug.Log(angle);
         Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotSpeed * Time.deltaTime);
         //this.gameObject.transform.Rotate(0, 0, -90);

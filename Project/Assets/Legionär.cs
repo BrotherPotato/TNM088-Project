@@ -10,6 +10,8 @@ public class Legionär : MonoBehaviour
 
     public UIScript uiScript;
 
+    public ElevatorScript elvScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class Legionär : MonoBehaviour
                     Debug.Log("1");
                     UIScript.legionar1Saved = true;
                     uiScript.touchLegion();
+                    elvScript.ActivateElevator();
                 }
                 break;
 
@@ -46,6 +49,7 @@ public class Legionär : MonoBehaviour
                     Debug.Log("2");
                     UIScript.legionar2Saved = true;
                     uiScript.touchLegion();
+                    elvScript.ActivateElevator();
                 }
                 break;
 
@@ -55,6 +59,7 @@ public class Legionär : MonoBehaviour
                     Debug.Log("3");
                     UIScript.legionar3Saved = true;
                     uiScript.touchLegion();
+                    elvScript.ActivateElevator();
                 }
                 break;
 
@@ -64,6 +69,7 @@ public class Legionär : MonoBehaviour
                     Debug.Log("4");
                     UIScript.legionar4Saved = true;
                     uiScript.touchLegion();
+                    elvScript.ActivateElevator();
                 }
                 break;
             
