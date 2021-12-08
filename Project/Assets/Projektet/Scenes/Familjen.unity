@@ -8354,6 +8354,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9111092051275609185, guid: 2f550785afe961c49aefe2072d3f6016, type: 3}
   m_PrefabInstance: {fileID: 998524415}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1000412572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4934690674191902982, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
+  m_PrefabInstance: {fileID: 4934690674213791669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a81f0fb3005a454bb936e28276989f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1003803978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9111092051275609185, guid: 2f550785afe961c49aefe2072d3f6016, type: 3}
@@ -17436,6 +17447,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9111092051275609185, guid: 2f550785afe961c49aefe2072d3f6016, type: 3}
   m_PrefabInstance: {fileID: 1902124078}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1907828957 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4934690674191902976, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
+  m_PrefabInstance: {fileID: 4934690674213791669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1917809498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17606,6 +17622,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2899463369302253119, guid: e086ee5c59723b64da961d36e3258cbb, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 2899463369302253119, guid: e086ee5c59723b64da961d36e3258cbb, type: 3}
+      propertyPath: elvScript
+      value: 
+      objectReference: {fileID: 1000412572}
     - target: {fileID: 8562729326072171900, guid: e086ee5c59723b64da961d36e3258cbb, type: 3}
       propertyPath: m_Name
       value: "Legion\xE4r2"
@@ -19703,7 +19727,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9202722453066288107, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453066288107, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -19744,6 +19768,10 @@ PrefabInstance:
     - target: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_Name
       value: DeathCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202722453457234448, guid: a28b9cb183c770c458d072441c709511, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202722453457234924, guid: a28b9cb183c770c458d072441c709511, type: 3}
       propertyPath: m_Pivot.x
@@ -19995,6 +20023,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4934690674191902982, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
+      propertyPath: openHiss
+      value: 
+      objectReference: {fileID: 21300000, guid: fc9cc726116d2824e94785efdc64e9b6, type: 3}
+    - target: {fileID: 4934690674191902982, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
+      propertyPath: uiScript
+      value: 
+      objectReference: {fileID: 2111531233}
+    - target: {fileID: 4934690674191902982, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1907828957}
     - target: {fileID: 4934690674191902983, guid: c294669cc37d320438ac7a988547e4d9, type: 3}
       propertyPath: m_Name
       value: Elevator
