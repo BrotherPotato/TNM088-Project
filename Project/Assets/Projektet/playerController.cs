@@ -32,11 +32,11 @@ public class playerController : MonoBehaviour
 
     [SerializeField] private GameObject _RedParticlePrefab;
     [SerializeField] private GameObject DeatchCanvas;
-
     [SerializeField] private GameObject LevelCompletedCanvas;
 
     public PauseMenu pauseMenu;
     public UIScript uiScript;
+    public UpdateLevelComp compCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -122,6 +122,8 @@ public class playerController : MonoBehaviour
         if(col.gameObject.tag == "elevator")
         {
             LevelCompletedCanvas.SetActive(true);
+            compCanvas.updateNumbers();
+            pauseMenu.DeathPause();
         }
     }
     void OnCollisionEnter2D(Collision2D col)
