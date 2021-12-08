@@ -27,7 +27,7 @@ public class UIScript : MonoBehaviour
     public string time;
     private string timeTextMinutes;
     private string timeTextSeconds;
-    private string pointsText;
+    public string pointsText;
     public int timeSecounds = 0;
     public int timeMinutes = 0;
     public static int points = 1000;
