@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 43829213203445793}
   - component: {fileID: 43829213203445797}
   - component: {fileID: -4357724138041835925}
+  - component: {fileID: 2759547712229380222}
   m_Layer: 6
   m_Name: bandLeftPrefab
   m_TagString: boomIg
@@ -145,3 +146,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beltSpeed: 25
+--- !u!95 &2759547712229380222
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43829213203445794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d0955e3666439045852ac805d32217f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
