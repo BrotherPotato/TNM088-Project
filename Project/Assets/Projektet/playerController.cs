@@ -38,6 +38,10 @@ public class playerController : MonoBehaviour
     public UIScript uiScript;
     public UpdateLevelComp compCanvas;
 
+    public AudioClip pickupCoin;
+    public AudioClip death;
+    public AudioClip jump;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +78,8 @@ public class playerController : MonoBehaviour
         //a = col.gameObject.GetComponent<SpriteRenderer>();
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
         if(col.gameObject.tag == "Death"){
+            GetComponent<AudioSource>().clip = death;
+            GetComponent<AudioSource>().Play();
             KillKajj();
         }
         //KillKajj();
@@ -81,6 +87,8 @@ public class playerController : MonoBehaviour
         {
             Debug.Log(col.gameObject.tag);
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+            GetComponent<AudioSource>().clip = death;
+            GetComponent<AudioSource>().Play();
 
             if (Mathf.Abs(rb.velocity.x) > 1f)
             {
@@ -98,6 +106,8 @@ public class playerController : MonoBehaviour
         {
             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+            GetComponent<AudioSource>().clip = death;
+            GetComponent<AudioSource>().Play();
 
 
                 Debug.Log("Death by box");
@@ -107,7 +117,7 @@ public class playerController : MonoBehaviour
                 //pauseMenu.DeathPause();
                 KillKajj();
                 deathBy = col.gameObject.tag;
-                        deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
+                deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
                 //pauseMenu.DeathPause();
                 // döda kajj
             
@@ -116,6 +126,8 @@ public class playerController : MonoBehaviour
         if(col.gameObject.tag == "Coin"){
             ananasCoin++;
             Destroy(col.gameObject);
+            GetComponent<AudioSource>().clip = pickupCoin;
+            GetComponent<AudioSource>().Play();
             uiScript.touchAnanas();
         }
 
@@ -131,16 +143,15 @@ public class playerController : MonoBehaviour
         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
         if((col.gameObject.tag == "boom" || col.gameObject.tag == "truck"  || col.gameObject.tag == "ping" ||  col.gameObject.tag == "KillPlane") && isAlive)
         {
-             
             Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
 
             if (Mathf.Abs(rb.velocity.x) > 10f)
             {
+                GetComponent<AudioSource>().clip = death;
+                GetComponent<AudioSource>().Play();
                 Debug.Log("Death by box");
                 Instantiate(_RedParticlePrefab, transform.position, Quaternion.identity);
                 DeatchCanvas.SetActive(true);
-                //Destroy(this.gameObject);
-                //pauseMenu.DeathPause();
                 KillKajj();
                 deathBy = col.gameObject.tag;
                         deathSprite = col.gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -184,6 +195,7 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 0)) {
             rb.velocity = new Vector2(rb.velocity.x, jumpheigth);
             additionalJumps--;
+            GetComponent<AudioSource>().clip = jump;
             GetComponent<AudioSource>().Play();
             if(Input.GetKeyDown(KeyCode.Space) && !isGrounded && additionalJumps == 0){
                 rb.gravityScale = 0.5f;
