@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 429844700586537434}
   - component: {fileID: 3670073188716090669}
   - component: {fileID: 9165884064817326042}
+  - component: {fileID: 3494776119524377469}
   m_Layer: 0
   m_Name: MoppeBrud
   m_TagString: ping
@@ -127,3 +128,22 @@ MonoBehaviour:
   - {x: 168.35, y: -1, z: 0}
   - {x: 188.49, y: -1, z: 0}
   rotatePingPong: 0
+--- !u!95 &3494776119524377469
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304487481956098249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07685e20f8bfd4f49b2b68d8075913ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
