@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1489651105780373894}
   - component: {fileID: 6319037748444848072}
   - component: {fileID: 2911071195576647765}
+  - component: {fileID: 7921548716154590716}
   m_Layer: 6
   m_Name: bandRightPrefab
   m_TagString: boomIg
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 57656c2aebfd24d4aac3034c1cf519b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -160,3 +161,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 176749003023169768, guid: 397e26ee3914ef14bb132b738a9ea504, type: 3}
   spawnTimer: 2
+  spawnYValue: 1
+--- !u!95 &7921548716154590716
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489651105780373889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfc4d645ae2943148917c0e7a978963f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

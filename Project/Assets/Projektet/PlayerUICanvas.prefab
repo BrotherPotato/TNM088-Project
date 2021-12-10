@@ -192,8 +192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -79.045, y: 0.0019532}
-  m_SizeDelta: {x: 98.9751, y: 131.28}
+  m_AnchoredPosition: {x: -81.8278, y: -1.6677}
+  m_SizeDelta: {x: 104.5406, y: 134.6194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1915506861573660523
 CanvasRenderer:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffd4d865486be1a4f8c7d3e12e18e320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c483ae1661569e144b7eebc37ae65ffb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -267,8 +267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -277, y: -0.0019531}
-  m_SizeDelta: {x: 98.9751, y: 131.28}
+  m_AnchoredPosition: {x: -275.15652, y: 0.1942}
+  m_SizeDelta: {x: 65.5818, y: 122.7459}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1915506861595007690
 CanvasRenderer:
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffd4d865486be1a4f8c7d3e12e18e320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ab97b7a866ca8a46b874d9834c477ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -342,8 +342,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375.98, y: -0.0019531}
-  m_SizeDelta: {x: 98.9751, y: 131.28}
+  m_AnchoredPosition: {x: -375.98, y: -0.744}
+  m_SizeDelta: {x: 124.9476, y: 160.2208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1915506862144556187
 CanvasRenderer:
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffd4d865486be1a4f8c7d3e12e18e320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb8afbf9b37605d47abcb1673e0880ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -503,9 +503,9 @@ MonoBehaviour:
   pointCounter: {fileID: 1568316471047070950}
   ananasCoin: 0
   time: 0
+  pointsText: 
   timeSecounds: 0
   timeMinutes: 0
-  points: 1000
   kajjAlive: 1
 --- !u!1 &1915506862426070591
 GameObject:
@@ -626,8 +626,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178.02, y: 0.0019532}
-  m_SizeDelta: {x: 98.9751, y: 131.28}
+  m_AnchoredPosition: {x: -186.6, y: -0.74401}
+  m_SizeDelta: {x: 134.5946, y: 166.1573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1915506862892042263
 CanvasRenderer:
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffd4d865486be1a4f8c7d3e12e18e320, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4bfa5959c4c4ff8439b15289f0618a2d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
